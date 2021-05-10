@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { Route } from "react-router-dom";
+import audioshire from "./Components/audioshire";
+import Bio from "./Components/Bio";
+import Contact from "./Components/ContactMe";
+import LandingPage from "./Components/LandingPage";
+import Portfolio from "./Components/Portfolio";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {};
+
+  renderMainRoutes() {
+    return (
+      <>
+        <Route exact path="/" component={LandingPage} />
+        <Route path="bio" component={Bio} />
+        <Route path="contactme" component={Contact} />
+        <Route path="portfolio" component={Portfolio} />
+        <Route path="audioshire" component={audioshire} />
+      </>
+    );
+  }
+
+  render() {
+    return (
+      <div className="App_main">
+        <main className="App_main">{this.renderMainRoutes()}</main>
+      </div>
+    );
+  }
 }
 
 export default App;
