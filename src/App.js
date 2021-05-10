@@ -5,6 +5,7 @@ import Bio from "./Components/Bio";
 import Contact from "./Components/ContactMe";
 import LandingPage from "./Components/LandingPage";
 import Portfolio from "./Components/Portfolio";
+import Socialsbar from "./Components/Socialsbar";
 
 class App extends Component {
   state = {};
@@ -24,7 +25,10 @@ class App extends Component {
   render() {
     return (
       <div className="App_main">
-        <main className="App_main">{this.renderMainRoutes()}</main>
+        <main className="App_main">
+          <Socialsbar />
+          {this.renderMainRoutes()}
+          </main>
       </div>
     );
   }
