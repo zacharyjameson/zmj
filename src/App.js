@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./App.css"
 import { Route } from "react-router-dom";
 import audioshire from "./Components/audioshire";
 import Bio from "./Components/Bio";
@@ -24,8 +25,9 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App_main">
+      <div>
         <main className="App_main">
+          
           <Socialsbar />
           {this.renderMainRoutes()}
           </main>

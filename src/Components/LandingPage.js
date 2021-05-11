@@ -5,14 +5,14 @@ class LandingPage extends Component {
   render() {
     return (
       <div className="homepage">
-        <section class="width">
+        <section className="width">
           <h2 id="bio">Bio.</h2>
-          <div class="group">
-            <div class="item item-double">
+          <div className="group">
+            <div className="item item-double">
               <p>Hi there! I'm Zack Jameson, I'm glad you found me.</p>
               <p>I'm a software developer living in Raleigh, NC</p>
               <p>
-                Take a look around my site and feel free to
+                Take a look around my site and feel free to {" "}
                 <a href="#contact">contact me!</a>
               </p>
               <p>3 things you should know about me:</p>
@@ -37,8 +37,8 @@ class LandingPage extends Component {
               <p>And a few services and traits I bring to the table:</p>
               <ul>
                 <li>
-                  Front-end web development utilizing React, JavaScript, JSX,
-                  Node.js, Postgres, HTML, and CSS development
+                  Full Stack Web Development utilizing React, JavaScript, JSX,
+                  Node.js, Postgres, Express, Heroku, Vercel, and HTML/CSS development
                 </li>
                 <li>
                   A desire to consistently push my skills as well as the team
@@ -49,9 +49,9 @@ class LandingPage extends Component {
                 <li>A positive attitude</li>
               </ul>
             </div>
-            <div class="item">
+            <div className="item">
               <img
-                class="me"
+                className="me"
                 src="images/zmj.png"
                 alt="portrait of Zachary Jameson's face in black & white"
               />
