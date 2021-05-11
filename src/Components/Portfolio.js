@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 
 class Portfolio extends Component {
-  state = {};
   render() {
     return (
-      <section class="width">
+      <section className="portfolio">
         <div>
           <h2 id="portfolio">Portfolio</h2>
         </div>

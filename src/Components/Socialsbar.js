@@ -7,6 +7,8 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 class Socialsbar extends Component {
   state = {};
@@ -23,7 +25,7 @@ class Socialsbar extends Component {
               title="Follow on GitHub"
               className="github"
             >
-              <FontAwesomeIcon size="3x" icon={faGithub}/>
+              <FontAwesomeIcon size="3x" icon={faGithub} />
             </a>
           </li>
           <li>
@@ -58,6 +60,11 @@ class Socialsbar extends Component {
             >
               <FontAwesomeIcon size="3x" icon={faInstagram} className="icon" />
             </a>
+          </li>
+          <li>
+            <Link to="/contactme" className="contactme">
+              <FontAwesomeIcon size="2x" icon={faEnvelope} />
+            </Link>
           </li>
         </ul>
       </div>

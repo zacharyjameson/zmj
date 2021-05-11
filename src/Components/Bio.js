@@ -4,7 +4,7 @@ class Bio extends Component {
   state = {};
   render() {
     return (
-      <section class="width">
+      <section className="bio">
         <div>
           <h2 id="career">Career.</h2>
           <p>

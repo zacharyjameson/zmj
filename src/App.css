@@ -1,10 +1,49 @@
+@font-face {
+  font-family: fairlyodd;
+  src: url(BandeinsStrangeVariable.ttf);
+}
 * {
   box-sizing: border-box;
+  color: white;
+  font-family: fairlyodd;
+}
+
+html {
+  background: url(./images/tiltshiftsf.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .homepage {
   width: 80%;
   margin: auto;
+  margin-top: 100px;
+}
+
+.bio {
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.portfolio {
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.audioshire {
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.contactform {
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
 }
 
 ul {
@@ -12,9 +51,18 @@ ul {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1db954;
+}
+
 .followme {
   font-size: 10px;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .socialsbar {
@@ -22,7 +70,7 @@ ul {
   position: fixed;
   left: 10px;
   top: calc(50% - (275px / 2));
-  width: 55px;
+  width: 58px;
   height: 275px;
 }
 
@@ -86,4 +134,47 @@ ul {
     #bc1888 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.socialsbar .contactme {
+  text-align: center;
+  text-decoration: none;
+  background-color: #1db954;
+  color: white;
+  font-weight: bold;
+  height: 64px;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: white;
+}
+
+.nav-logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: white;
 }
