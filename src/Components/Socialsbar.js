@@ -15,9 +15,9 @@ class Socialsbar extends Component {
   render() {
     return (
       <div className="socialsbar">
-        <ul>
-          <li className="followme">Follow me</li>
-          <li>
+        <ul className="socialsGroup">
+          <li className="followme socialItem">Follow me</li>
+          <li className="socialItem">
             <a
               href="https://github.com/zacharyjameson"
               target="_blank"
@@ -28,7 +28,7 @@ class Socialsbar extends Component {
               <FontAwesomeIcon size="2x" icon={faGithub} />
             </a>
           </li>
-          <li>
+          <li className="socialItem">
             <a
               href="https://www.linkedin.com/in/zacharyjameson/"
               target="_blank"
@@ -39,7 +39,7 @@ class Socialsbar extends Component {
               <FontAwesomeIcon size="2x" icon={faLinkedinIn} />
             </a>
           </li>
-          <li>
+          <li className="socialItem">
             <a
               href="https://www.twitter.com/audiohobbit"
               target="_blank"
@@ -50,7 +50,7 @@ class Socialsbar extends Component {
               <FontAwesomeIcon size="2x" icon={faTwitter} />
             </a>
           </li>
-          <li>
+          <li className="socialItem">
             <a
               href="https://www.instagram.com/zacharyjameson"
               target="_blank"

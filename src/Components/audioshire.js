@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import julie from "../images/influencerpodcast.png";
+import alyshia from "../images/thatoneaudition.jpg";
+import alejandro from "../images/dealmakerspodcast.jpg";
 
 class audioshire extends Component {
   state = {};
@@ -19,29 +22,29 @@ class audioshire extends Component {
               success!
             </p>
           </div>
-          <div class="group">
-            <div class="item">
+          <div class="audioshireGroup">
+            <div class="audioItem">
               <a href="https://podcasts.apple.com/us/podcast/the-influencer-podcast/id1229401800">
                 <img
-                  src="images/influencerpodcast.png"
+                  src={julie}
                   width="200"
                   alt="Influencer Podcast with Julie Solomon Artwork Cover"
                 />
               </a>
             </div>
-            <div class="item">
+            <div class="audioItem">
               <a href="https://podcasts.apple.com/us/podcast/that-one-audition-with-alyshia-ochse/id1262208420">
                 <img
-                  src="images/thatoneaudition.jpg"
+                  src={alyshia}
                   width="200"
                   alt="That One Audition Podcast with Alyshia Ochse Artwork Cover"
                 />
               </a>
             </div>
-            <div class="item">
+            <div class="audioItem">
               <a href="https://podcasts.apple.com/us/podcast/dealmakers/id1439149348">
                 <img
-                  src="images/dealmakerspodcast.jpg"
+                  src={alejandro}
                   width="200"
                   alt="DealMaker's Podcast with Alejandro Cremades Artwork Cover"
                 />
