@@ -1,20 +1,24 @@
 import React, { Component } from "react";
-import me from "../images/updatedz.jpg"
+import me from "../images/updatedz.jpg";
+import { Link } from "react-router-dom";
 
 class LandingPage extends Component {
   state = {};
   render() {
     return (
       <div className="homepage">
-        <section className="width">
-          <h2 id="bio">Bio.</h2>
-          <div className="group">
-            <div className="item item-double">
+        <section>
+          <div className="homegroup">
+            <div className="homeitem">
               <p>Hi there! I'm Zack Jameson, I'm glad you found me.</p>
-              <p>I'm a software developer living in Raleigh, NC</p>
               <p>
-                Take a look around my site and feel free to {" "}
-                <a href="#contact">contact me!</a>
+                I'm a software developer from California, living in Raleigh, NC
+              </p>
+              <p>
+                Take a look around my site and feel free to{" "}
+                <Link to="contactme" className="links">
+                  contact me!
+                </Link>
               </p>
               <p>3 things you should know about me:</p>
               <ol>
@@ -31,15 +35,16 @@ class LandingPage extends Component {
                   working toward a common goal.
                 </li>
                 <li>
-                  As Mel Brooks would say, the 2020 quarantine has only turned
-                  me mostly insane; but not entirely....yet.
+                  As Mel Brooks would say, the 2020 quarantine has made
+                  me mostly dead; but not <em>all</em> dead.
                 </li>
               </ol>
               <p>And a few services and traits I bring to the table:</p>
               <ul>
                 <li>
                   Full Stack Web Development utilizing React, JavaScript, JSX,
-                  Node.js, Postgres, Express, Heroku, Vercel, and HTML/CSS development
+                  Node.js, Postgres, Express, Heroku, Vercel, and HTML/CSS
+                  development
                 </li>
                 <li>
                   A desire to consistently push my skills as well as the team
@@ -50,7 +55,7 @@ class LandingPage extends Component {
                 <li>A positive attitude</li>
               </ul>
             </div>
-            <div className="item">
+            <div className="homeitem me">
               <img
                 className="me"
                 src={me}

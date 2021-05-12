@@ -4,10 +4,10 @@ class Contact extends Component {
   render() {
     return (
       <div className="contactform">
-        <section class="width">
-          <h2 id="contact">Contact Me.</h2>
-          <div className="group">
-            <div className="item">
+        <section>
+          <h2>Contact Me.</h2>
+          <div className="contactbox">
+            <div className="contactitem">
               <form action="https://formspree.io/f/mqkgggda" method="post">
                 <label for="name">Name: </label>
                 <input
@@ -37,7 +37,7 @@ class Contact extends Component {
                 <button type="reset">Reset</button>
               </form>
             </div>
-            <div class="item">
+            <div className="contactitem">
               <ul>
                 <li>
                   Email: {" "}

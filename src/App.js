@@ -9,6 +9,7 @@ import Portfolio from "./Components/Portfolio";
 import Socialsbar from "./Components/Socialsbar";
 import Navbar from "./Components/Navbar";
 
+
 class App extends Component {
   state = {};
 
@@ -28,9 +29,9 @@ class App extends Component {
     return (
       <div>
         <main className="App_main">
+        {this.renderMainRoutes()}
           <Navbar />
           <Socialsbar />
-          {this.renderMainRoutes()}
         </main>
       </div>
     );
