@@ -1,4 +1,9 @@
 import React, { Component } from "react";
+import moviedex from "../images/moviedex.jpeg";
+import weathertop from "../images/weathertop.jpeg";
+import musiciandex from "../images/musiciandexresults.jpeg";
+import quizapp from "../images/quizapp.jpeg";
+import noteful from "../images/noteful2.jpeg";
 
 class Portfolio extends Component {
   render() {
@@ -7,23 +12,23 @@ class Portfolio extends Component {
         <div>
           <h2 id="portfolio">Portfolio</h2>
         </div>
-        <ul class="group">
-          <li class="item">
+        <ul className="group">
+          <li className="item">
             <h5>Moviedex</h5>
             <a href="https://moviedex-client.vercel.app/" target="_blank">
               <img
-                src="images/moviedex.jpeg"
+                src={moviedex}
                 alt="screenshot of Moviedex app with Star Wars results"
               />
             </a>
-            <p>
+            <div>
               The purpose of Moviedex is to help users decide on what movie to
               watch, from a list of saved movies. Moviedex is a React web
               application that allows users to call a public movie API, OMDb,
               save/delete those movies to/from Moviedex's server, and then click
               a button to randomly generate one of those movies as the selected
               movie to watch.
-            </p>
+              </div>
             <p>
               Client Repo:
               <a
@@ -53,14 +58,14 @@ class Portfolio extends Component {
               React, Vercel, Heroku and JSX
             </p>
           </li>
-          <li class="item">
+          <li className="item">
             <h5>Weathertop</h5>
             <a
               href="https://zacharyjameson.github.io/weathertop"
               target="_blank"
             >
               <img
-                src="images/weathertop.jpeg"
+                src={weathertop}
                 alt="screenshot of weathertop app with san francisco weather results"
               />
             </a>
@@ -89,14 +94,14 @@ class Portfolio extends Component {
             </p>
             <p>Skills Used: HTML, CSS, JavaScript, React, GH Pages and JSX</p>
           </li>
-          <li class="item">
+          <li className="item">
             <h5>Musiciandex</h5>
             <a
               href="https://zacharyjameson.github.io/musiciandex/"
               target="_blank"
             >
               <img
-                src="images/musiciandexresults.jpeg"
+                src={musiciandex}
                 alt="screenshot of musiciandex homepage"
               />
             </a>
@@ -130,11 +135,11 @@ class Portfolio extends Component {
             </p>
             <p>Skills Used: HTML, CSS, JavaScript, and jQuery</p>
           </li>
-          <li class="item">
+          <li className="item">
             <h5>One Quiz to Rule Them All</h5>
             <a href="https://zacharyjameson.github.io/quiz-app/">
               <img
-                src="images/quizapp.jpeg"
+                src={quizapp}
                 alt="screen shot of quiz app question"
               />
             </a>
@@ -158,10 +163,10 @@ class Portfolio extends Component {
             <p>Skills Used: HTML, CSS, JavaScript, and jQuery</p>
           </li>
 
-          <li class="item">
+          <li className="item">
             <h5>Noteful</h5>
             <a href="https://noteful-inky.vercel.app/" target="_blank">
-              <img src="images/noteful2.jpeg" alt="noteful demo screenshot" />
+              <img src={noteful} alt="noteful demo screenshot" />
             </a>
             <p>
               Utilizing React, JSX, CSS, JavaScript, Postgres, Express, Node.js,

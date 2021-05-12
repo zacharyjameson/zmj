@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import inserts from "../images/audio.jpg";
 
 class Bio extends Component {
   state = {};
@@ -25,8 +26,8 @@ class Bio extends Component {
             developer for them.
           </p>
         </div>
-        <div class="group">
-          <div class="item">
+        <div className="group">
+          <div className="item">
             <p>
               When I'm not developing my coding skills (which is rare these
               days), you can usually find me composing, editing, or playing
@@ -36,9 +37,10 @@ class Bio extends Component {
               Tycho, or Explosions in the Sky.
             </p>
           </div>
-          <div class="item">
+          <div className="item">
             <img
-              src="images/musicproduction.jpg"
+              className="audio"
+              src={inserts}
               alt="silhouette of human in front of lit computer screen at desk with music equipment surrounding"
             />
           </div>

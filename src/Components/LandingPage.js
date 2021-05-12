@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import me from "../images/updatedz.jpg"
 
 class LandingPage extends Component {
   state = {};
@@ -52,7 +53,7 @@ class LandingPage extends Component {
             <div className="item">
               <img
                 className="me"
-                src="images/zmj.png"
+                src={me}
                 alt="portrait of Zachary Jameson's face in black & white"
               />
             </div>

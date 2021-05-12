@@ -25,7 +25,7 @@ class Socialsbar extends Component {
               title="Follow on GitHub"
               className="github"
             >
-              <FontAwesomeIcon size="3x" icon={faGithub} />
+              <FontAwesomeIcon size="2x" icon={faGithub} />
             </a>
           </li>
           <li>
@@ -36,7 +36,7 @@ class Socialsbar extends Component {
               title="Follow on Linkedin"
               className="linkedin"
             >
-              <FontAwesomeIcon size="3x" icon={faLinkedinIn} />
+              <FontAwesomeIcon size="2x" icon={faLinkedinIn} />
             </a>
           </li>
           <li>
@@ -47,7 +47,7 @@ class Socialsbar extends Component {
               title="Follow on Twitter"
               className="twitter"
             >
-              <FontAwesomeIcon size="3x" icon={faTwitter} />
+              <FontAwesomeIcon size="2x" icon={faTwitter} />
             </a>
           </li>
           <li>
@@ -58,7 +58,7 @@ class Socialsbar extends Component {
               title="Follow on Instagram"
               className="instagram"
             >
-              <FontAwesomeIcon size="3x" icon={faInstagram} className="icon" />
+              <FontAwesomeIcon size="2x" icon={faInstagram} className="icon" />
             </a>
           </li>
           <li>
