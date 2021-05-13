@@ -4,7 +4,6 @@
 }
 * {
   box-sizing: border-box;
-  color: white;
   font-family: fairlyodd;
 }
 
@@ -26,8 +25,8 @@ html {
   height: 100%;
   overflow: auto;
   background-color: rgba(122, 122, 122, 0.397);
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .App_main::-webkit-scrollbar {
@@ -40,19 +39,13 @@ html {
   padding: 15px;
   padding-top: 80px;
   margin: auto;
-}
-
-.homepage p {
   color: black;
+  font-weight: 450;
 }
 
 .links {
   font-weight: bold;
-  color: black;
-}
-
-.links:hover {
-  font-size: 18px;
+  color: white;
 }
 
 .bio {
@@ -277,11 +270,12 @@ img {
   display: block;
   position: fixed;
   top: 2px;
-  left: 13%;
+  color: white;
+  left: 9%;
   width: 50px;
   border-radius: 100px;
   z-index: 1001;
-  text-shadow: 0px 0px 15px white;
+  text-shadow: 0px 0px 15px rgba(255, 253, 253, 0.315);
 }
 
 .group {
@@ -340,6 +334,65 @@ img {
 
 .nav-logo {
   display: none;
+  color: white;
+}
+
+.contactbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactbox2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactbuttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactbuttons button {
+  border: none;
+  margin: 10px;
+  font-weight:800;
+  color: white;
+  height: 35px;
+  width: 90px;
+  text-shadow:2px 2px 15px rgb(0, 0, 0);
+  border-radius: 10px;
+  background-color: #1db954;
+  box-shadow: 0px 0px 15px rgb(70, 69, 69);
+}
+
+.contactemail {
+  display: flex;
+  justify-content: center;
+}
+
+.contactbox .contactitem {
+  margin: 10px;
+}
+
+input {
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+  text-align: center;
+}
+
+textarea {
+  width: 269px;
+  height: 100px;
+  border-radius: 10px;
+  border: none;
+  text-align: left;
+  padding: 10px;
 }
 
 @media all and (min-width: 900px) {
@@ -444,20 +497,9 @@ img {
     z-index: 1001;
     top: 0.2%;
     left: 5%;
+    color: white;
     display: unset;
     text-shadow: 0px 0px 15px rgba(255, 253, 253, 0.315);
-  }
-
-  .contactbox {
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  .contactbox .item {
-    width: 100px;
   }
 
   .homegroup {
@@ -465,6 +507,9 @@ img {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    margin: auto;
+    padding-top: 0;
+    margin-top: 0;
   }
 
   .homeitem {

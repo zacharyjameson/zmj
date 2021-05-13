@@ -1,4 +1,7 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { Component } from "react";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 
 class Contact extends Component {
   render() {
@@ -6,25 +9,30 @@ class Contact extends Component {
       <div className="contactform">
         <section>
           <h2>Contact Me.</h2>
-          <div className="contactbox">
-            <div className="contactitem">
-              <form action="https://formspree.io/f/mqkgggda" method="post">
+          <form action="https://formspree.io/f/mqkgggda" method="post">
+            <div className="contactbox">
+              <div className="contactitem">
                 <label for="name">Name: </label>
+                <br />
                 <input
                   type="text"
                   id="name"
                   name="name"
                   placeholder="Enter Full Name"
                 />
-                <br />
-                <label for="_replyto">Email: </label>
+              </div>
+              <div className="contactitem">
+                <label for="_replyto">Email: </label> <br />
                 <input
                   type="email"
                   id="_replyto"
                   name="_replyto"
                   placeholder="hellothere@gmail.com"
                 />
-                <br />
+              </div>
+            </div>
+            <div className="contactbox2">
+              <div className="contactitem">
                 <label for="user-message">Message:</label>
                 <br />
                 <textarea
@@ -32,22 +40,17 @@ class Contact extends Component {
                   name="message"
                   placeholder="How can I help you?"
                 ></textarea>
-                <br />
-                <button type="submit">Submit</button>
-                <button type="reset">Reset</button>
-              </form>
+              </div>
             </div>
-            <div className="contactitem">
-              <ul>
-                <li>
-                  Email: {" "}
-                  <a href="mailto:audiohobbit@gmail.com">
-                    audiohobbit@gmail.com
-                  </a>
-                </li>
-              </ul>
+            <div className="contactbuttons">
+              <button className="contactitem" type="submit">Submit</button>
+              <button className="contactitem" type="reset">Reset</button>
             </div>
-          </div>
+            <div className="contactemail">
+            <FontAwesomeIcon size="2x" icon={faEnvelope} />
+            <a href="mailto:audiohobbit@gmail.com"> audiohobbit@gmail.com</a>
+            </div>
+          </form>
         </section>
       </div>
     );

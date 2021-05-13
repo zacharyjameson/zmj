@@ -23,10 +23,10 @@ function Navbar() {
       <nav className="navBar">
         <button onClick={handleToggle}>
           {navbarOpen ? (
-            <MdClose style={{ color: "black", width: "40px", height: "40px" }} />
+            <MdClose style={{ color: "white", width: "40px", height: "40px" }} />
           ) : (
             <FiMenu
-              style={{ color: "black", width: "40px", height: "40px" }}
+              style={{ color: "white", width: "40px", height: "40px" }}
             />
           )}
         </button>
