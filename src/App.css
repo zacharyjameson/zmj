@@ -14,22 +14,32 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  margin: auto;
+  height: 100%;
 }
 
 .App_main {
-  margin: auto;
-  background-color: rgba(155, 152, 152, 0.5);
+  position: fixed;
+  left: 10%;
+  margin: 0;
   width: 80%;
-  top: 0;
   height: 100%;
+  overflow: auto;
+  background-color: rgba(122, 122, 122, 0.397);
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.App_main::-webkit-scrollbar {
+  display: none; /* Google Chrome */
 }
 
 .homepage {
-  width: 80%;
-  justify-content: right;
-  margin: auto;
-  margin-top: 80px;
+  width: 85%;
   height: 100%;
+  padding: 15px;
+  padding-top: 80px;
+  margin: auto;
 }
 
 .homepage p {
@@ -47,34 +57,34 @@ html {
 
 .bio {
   width: 80%;
+  padding: 15px;
   margin: auto;
-  margin-top: 110px;
-  margin-bottom: 50px;
-  text-align: center;
+  height: 100%;
+  margin-top: 80px;
 }
 
 .portfolio {
   width: 80%;
+  padding: 15px;
   margin: auto;
-  padding-top: .1px;
+  height: 100%;
   margin-top: 80px;
-  margin-bottom: 50px;
 }
 
 .audioshire {
   width: 80%;
+  height: 100%;
+  padding: 15px;
+  padding-top: 80px;
   margin: auto;
-  margin-top: 100px;
-  margin-bottom: 50px;
 }
 
 .contactform {
   width: 80%;
+  height: 100%;
+  padding: 15px;
+  padding-top: 80px;
   margin: auto;
-  margin-top: 110px;
-  margin-bottom: 50px;
-  justify-content: center;
-  align-items: center;
 }
 
 ul {
@@ -206,7 +216,7 @@ a:hover {
 .navBar button {
   position: fixed;
   right: 3%;
-  top: 30px;
+  top: 20px;
   z-index: 10;
   cursor: pointer;
   background: transparent;
@@ -220,7 +230,7 @@ a:hover {
   top: 0;
   margin: auto;
   margin-right: -30px;
-  background: rgba(0, 0, 0, .8);
+  background: rgba(0, 0, 0, 0.8);
   right: 0;
   bottom: 0;
   height: 100%;
@@ -228,12 +238,10 @@ a:hover {
   overflow: hidden;
   max-width: 290px;
   z-index: 9;
-  transition: transform 600ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
 .menuNav.showMenu {
   width: 50%;
-  transform: translate3d(-30px, 0, 0);
 }
 
 .navBar a {
@@ -268,7 +276,7 @@ img {
 .meNav {
   display: block;
   position: fixed;
-  top: 10px;
+  top: 2px;
   left: 13%;
   width: 50px;
   border-radius: 100px;
@@ -295,7 +303,8 @@ img {
 .audioshireGroup {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  margin: auto;
   align-content: center;
 }
 
@@ -305,7 +314,7 @@ img {
 }
 
 .audioItem img:hover {
-  width: 285px;
+  transform: scale(1.05);
 }
 
 .portfoliogroup {
@@ -317,17 +326,32 @@ img {
 .portfolioitem {
   flex: 1;
   margin: 10px;
-  max-width: 50%;
+}
+
+.portfolioitem img {
+  max-width: 300px;
+  max-height: 300px;
+  left: 50px;
+}
+
+.portfolioitem img:hover {
+  transform: scale(1.05);
 }
 
 .nav-logo {
   display: none;
-  z-index: 1001;
 }
 
 @media all and (min-width: 900px) {
   .audioshireGroup {
+    display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .audioItem {
+    width: 275px;
   }
 
   .group {
@@ -398,7 +422,7 @@ img {
     position: fixed;
     top: 0;
     margin: auto;
-    margin-right: -50px;
+    margin-right: -80px;
     background: rgba(0, 0, 0, 0.795);
     right: 0;
     bottom: 0;
@@ -407,20 +431,21 @@ img {
     overflow: hidden;
     max-width: 290px;
     z-index: 9;
-    transition: transform 600ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    transition: transform 600ms cubic-bezier(0.2, 0.45, 0.8, 0.9);
   }
-  
+
   .menuNav.showMenu {
     width: 10%;
-    transform: translate3d(-50px, 0, 0);
+    transform: translate3d(-80px, 0, 0);
   }
 
   .nav-logo {
     position: fixed;
-    top: .2%;
-    left: 13%;
+    z-index: 1001;
+    top: 0.2%;
+    left: 5%;
     display: unset;
-    text-shadow: 0px 0px 15px rgba(238, 237, 237, 0.253);
+    text-shadow: 0px 0px 15px rgba(255, 253, 253, 0.315);
   }
 
   .contactbox {
@@ -449,16 +474,13 @@ img {
   .portfoliogroup {
     display: flex;
     flex-direction: row;
+    text-align: center;
     flex-wrap: wrap;
-    justify-items: center;
   }
 
   .portfolioitem {
     flex: 1;
-    flex-shrink: 0;
-    flex-grow: auto;
     margin: 10px;
-    width: 50%;
   }
 
   .me {

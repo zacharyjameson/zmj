@@ -15,9 +15,10 @@ class Portfolio extends Component {
         <ul className="portfoliogroup">
           <li className="portfolioitem">
             <h5>Moviedex</h5>
-            <a href="https://moviedex-client.vercel.app/" target="_blank">
+            <a href="https://moviedex-client.vercel.app/" target="_blank" rel="noreferrer">
               <img
                 src={moviedex}
+                width="200"
                 alt="screenshot of Moviedex app with Star Wars results"
               />
             </a>
@@ -33,7 +34,7 @@ class Portfolio extends Component {
               Client Repo:
               <a
                 href="https://github.com/zacharyjameson/moviedex-client"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 github.com/zacharyjameson/moviedex-client
               </a>
@@ -42,14 +43,14 @@ class Portfolio extends Component {
               Server Repo:
               <a
                 href="https://github.com/zacharyjameson/moviedex-server"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 github.com/zacharyjameson/moviedex-server
               </a>
             </p>
             <p>
               Live App:
-              <a href="https://moviedex-client.vercel.app/" target="_blank">
+              <a href="https://moviedex-client.vercel.app/" target="_blank" rel="noreferrer">
                 Moviedex
               </a>
             </p>
@@ -62,10 +63,11 @@ class Portfolio extends Component {
             <h5>Weathertop</h5>
             <a
               href="https://zacharyjameson.github.io/weathertop"
-              target="_blank"
+              target="_blank" rel="noreferrer"
             >
               <img
                 src={weathertop}
+                width="200"
                 alt="screenshot of weathertop app with san francisco weather results"
               />
             </a>
@@ -78,7 +80,7 @@ class Portfolio extends Component {
               Repo:
               <a
                 href="https://github.com/zacharyjameson/weathertop"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 github.com/zacharyjameson/weathertop
               </a>
@@ -87,7 +89,7 @@ class Portfolio extends Component {
               Live App:
               <a
                 href="https://zacharyjameson.github.io/weathertop"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 zacharyjameson.github.io/weathertop
               </a>
@@ -98,10 +100,11 @@ class Portfolio extends Component {
             <h5>Musiciandex</h5>
             <a
               href="https://zacharyjameson.github.io/musiciandex/"
-              target="_blank"
+              target="_blank" rel="noreferrer"
             >
               <img
                 src={musiciandex}
+                width="200"
                 alt="screenshot of musiciandex homepage"
               />
             </a>
@@ -119,7 +122,7 @@ class Portfolio extends Component {
               Repo:
               <a
                 href="https://github.com/zacharyjameson/musiciandex"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 github.com/zacharyjameson/musiciandex
               </a>
@@ -128,7 +131,7 @@ class Portfolio extends Component {
               Live App:
               <a
                 href="https://zacharyjameson.github.io/musiciandex/"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 zacharyjameson.github.io/musiciandex/
               </a>
@@ -141,6 +144,7 @@ class Portfolio extends Component {
             <a href="https://zacharyjameson.github.io/quiz-app/">
               <img
                 src={quizapp}
+                width="200"
                 alt="screen shot of quiz app question"
               />
             </a>
@@ -166,8 +170,8 @@ class Portfolio extends Component {
 
           <li className="portfolioitem">
             <h5>Noteful</h5>
-            <a href="https://noteful-inky.vercel.app/" target="_blank">
-              <img src={noteful} alt="noteful demo screenshot" />
+            <a href="https://noteful-inky.vercel.app/" target="_blank" rel="noreferrer">
+              <img src={noteful} width="200" alt="noteful demo screenshot" />
             </a>
             <p>
               Utilizing React, JSX, CSS, JavaScript, Postgres, Express, Node.js,
@@ -177,7 +181,7 @@ class Portfolio extends Component {
               was built as the backend as well, which can be viewed
               <a
                 href="https://github.com/zacharyjameson/noteful-server"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 here
               </a>
@@ -187,7 +191,7 @@ class Portfolio extends Component {
               Client Repo:
               <a
                 href="https://github.com/zacharyjameson/noteful"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 github.com/zacharyjameson/noteful
               </a>
@@ -196,14 +200,14 @@ class Portfolio extends Component {
               Server Repo:
               <a
                 href="https://github.com/zacharyjameson/noteful-server"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 github.com/zacharyjameson/noteful-server
               </a>
             </p>
             <p>
               Live App:
-              <a href="https://noteful-inky.vercel.app/" target="_blank">
+              <a href="https://noteful-inky.vercel.app/" target="_blank" rel="noreferrer">
                 Noteful
               </a>
             </p>

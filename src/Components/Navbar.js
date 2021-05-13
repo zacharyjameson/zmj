@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import me from "../images/updatedz.jpg";
 import { MdClose } from "react-icons/md";
 import { FiMenu } from "react-icons/fi";
 
