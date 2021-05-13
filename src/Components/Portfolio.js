@@ -12,8 +12,8 @@ class Portfolio extends Component {
         <div>
           <h2 id="portfolio">Portfolio</h2>
         </div>
-        <ul className="group">
-          <li className="item">
+        <ul className="portfoliogroup">
+          <li className="portfolioitem">
             <h5>Moviedex</h5>
             <a href="https://moviedex-client.vercel.app/" target="_blank">
               <img
@@ -58,7 +58,7 @@ class Portfolio extends Component {
               React, Vercel, Heroku and JSX
             </p>
           </li>
-          <li className="item">
+          <li className="portfolioitem">
             <h5>Weathertop</h5>
             <a
               href="https://zacharyjameson.github.io/weathertop"
@@ -89,12 +89,12 @@ class Portfolio extends Component {
                 href="https://zacharyjameson.github.io/weathertop"
                 target="_blank"
               >
-                zacharyjameson.github.io/weather-search
+                zacharyjameson.github.io/weathertop
               </a>
             </p>
             <p>Skills Used: HTML, CSS, JavaScript, React, GH Pages and JSX</p>
           </li>
-          <li className="item">
+          <li className="portfolioitem">
             <h5>Musiciandex</h5>
             <a
               href="https://zacharyjameson.github.io/musiciandex/"
@@ -135,7 +135,7 @@ class Portfolio extends Component {
             </p>
             <p>Skills Used: HTML, CSS, JavaScript, and jQuery</p>
           </li>
-          <li className="item">
+          <li className="portfolioitem">
             <h5>One Quiz to Rule Them All</h5>
             <a href="https://zacharyjameson.github.io/quiz-app/">
               <img
@@ -163,7 +163,7 @@ class Portfolio extends Component {
             <p>Skills Used: HTML, CSS, JavaScript, and jQuery</p>
           </li>
 
-          <li className="item">
+          <li className="portfolioitem">
             <h5>Noteful</h5>
             <a href="https://noteful-inky.vercel.app/" target="_blank">
               <img src={noteful} alt="noteful demo screenshot" />

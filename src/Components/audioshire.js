@@ -8,7 +8,7 @@ class audioshire extends Component {
   render() {
     return (
       <div className="audioshire">
-        <section class="width">
+        <section>
           <div>
             <h2 id="audioshire">audioshire.</h2>
             <p>
@@ -22,8 +22,8 @@ class audioshire extends Component {
               success!
             </p>
           </div>
-          <div class="audioshireGroup">
-            <div class="audioItem">
+          <div className="audioshireGroup">
+            <div className="audioItem">
               <a href="https://podcasts.apple.com/us/podcast/the-influencer-podcast/id1229401800">
                 <img
                   src={julie}
@@ -32,7 +32,7 @@ class audioshire extends Component {
                 />
               </a>
             </div>
-            <div class="audioItem">
+            <div className="audioItem">
               <a href="https://podcasts.apple.com/us/podcast/that-one-audition-with-alyshia-ochse/id1262208420">
                 <img
                   src={alyshia}
@@ -41,7 +41,7 @@ class audioshire extends Component {
                 />
               </a>
             </div>
-            <div class="audioItem">
+            <div className="audioItem">
               <a href="https://podcasts.apple.com/us/podcast/dealmakers/id1439149348">
                 <img
                   src={alejandro}
