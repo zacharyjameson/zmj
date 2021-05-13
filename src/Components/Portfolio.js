@@ -135,6 +135,7 @@ class Portfolio extends Component {
             </p>
             <p>Skills Used: HTML, CSS, JavaScript, and jQuery</p>
           </li>
+          <div className="portfoliogroup">
           <li className="portfolioitem">
             <h5>One Quiz to Rule Them All</h5>
             <a href="https://zacharyjameson.github.io/quiz-app/">
@@ -211,6 +212,7 @@ class Portfolio extends Component {
               Node.js, Express and JavaScript
             </p>
           </li>
+          </div>
         </ul>
       </section>
     );

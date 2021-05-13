@@ -16,14 +16,10 @@ function Navbar() {
   };
 
   return (
-    <div className="nav">
+    <div className="navBar">
       <h1 className="nav-logo">Zachary Jameson</h1>
       <div>
-        <img
-          className="meNav"
-          src={me}
-          alt="portrait of Zachary Jameson's face in black & white"
-        />
+        <h1 className="meNav">ZMJ</h1>
       </div>
       <nav className="navBar">
         <button onClick={handleToggle}>
