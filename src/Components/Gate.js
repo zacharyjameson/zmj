@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import gatewaySTORE from "../gatewaySTORE/gatewaySTORE";
 import Tilt from "react-parallax-tilt";
 
@@ -14,7 +13,7 @@ class Gateway extends Component {
               <div className="gateitem" key={index}>
                 <Tilt tiltReverse={true} scale={.99}>
                   <div>
-                    <img className="gateitem" className="cover" src={pic.picture} alt="tile" />
+                    <img className="cover" src={pic.picture} alt="tile" />
                   </div>
                 </Tilt>
               </div>
