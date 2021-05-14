@@ -14,12 +14,12 @@ class App extends Component {
   renderMainRoutes() {
     return (
       <>
-        <Route path="/home" component={LandingPage} />
+        <Route exact path="/" component={LandingPage} />
         <Route path="/bio" component={Bio} />
         <Route path="/contactme" component={Contact} />
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/audioshire" component={audioshire} />
-        <Route exact path="/" component={Gateway} />
+        <Route path="/interests" component={Gateway} />
       </>
     );
   }
