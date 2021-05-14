@@ -3,12 +3,11 @@ import me from "../images/updatedz.jpg";
 import { Link } from "react-router-dom";
 
 class LandingPage extends Component {
-  state = {};
   render() {
     return (
       <div className="homepage">
         <section>
-        <h1>Home.</h1>
+          <h1>Home.</h1>
           <div className="homegroup">
             <div className="homeitem">
               <p>Hi there! I'm Zack Jameson, I'm glad you found me.</p>
@@ -36,8 +35,8 @@ class LandingPage extends Component {
                   working toward a common goal.
                 </li>
                 <li>
-                  As Mel Brooks would say, the 2020 quarantine has made
-                  me mostly dead; but not <em>all</em> dead.
+                  As Mel Brooks would say, the 2020 quarantine has made me
+                  mostly dead; but not <em>all</em> dead.
                 </li>
               </ol>
               <p>And a few services and traits I bring to the table:</p>
@@ -57,11 +56,11 @@ class LandingPage extends Component {
               </ul>
             </div>
             <div className="homeitem me">
-              <img
-                className="me"
-                src={me}
-                alt="portrait of Zachary Jameson's face in black & white"
-              />
+                <img
+                  className="me"
+                  src={me}
+                  alt="portrait of Zachary Jameson's face in black & white"
+                />
             </div>
           </div>
         </section>

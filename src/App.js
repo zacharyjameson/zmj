@@ -8,19 +8,18 @@ import LandingPage from "./Components/LandingPage";
 import Portfolio from "./Components/Portfolio";
 import Socialsbar from "./Components/Socialsbar";
 import Navbar from "./Components/Navbar";
-
+import Gateway from "./Components/Gate";
 
 class App extends Component {
-  state = {};
-
   renderMainRoutes() {
     return (
       <>
-        <Route exact path="/" component={LandingPage} />
+        <Route path="/home" component={LandingPage} />
         <Route path="/bio" component={Bio} />
         <Route path="/contactme" component={Contact} />
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/audioshire" component={audioshire} />
+        <Route exact path="/" component={Gateway} />
       </>
     );
   }
@@ -29,7 +28,7 @@ class App extends Component {
     return (
       <div>
         <main className="App_main">
-        {this.renderMainRoutes()}
+          {this.renderMainRoutes()}
           <Navbar />
           <Socialsbar />
         </main>

@@ -2,7 +2,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { Component } from "react";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-
 class Contact extends Component {
   render() {
     return (
@@ -19,6 +18,7 @@ class Contact extends Component {
                   id="name"
                   name="name"
                   placeholder="Enter Full Name"
+                  required
                 />
               </div>
               <div className="contactitem">
@@ -28,6 +28,7 @@ class Contact extends Component {
                   id="_replyto"
                   name="_replyto"
                   placeholder="hellothere@gmail.com"
+                  required
                 />
               </div>
             </div>
@@ -39,18 +40,26 @@ class Contact extends Component {
                   id="user-message"
                   name="message"
                   placeholder="How can I help you?"
+                  required
                 ></textarea>
               </div>
             </div>
             <div className="contactbuttons">
-              <button className="contactitem" type="submit">Submit</button>
-              <button className="contactitem" type="reset">Reset</button>
-            </div>
-            <div className="contactemail">
-            <FontAwesomeIcon size="2x" icon={faEnvelope} />
-            <a href="mailto:audiohobbit@gmail.com"> audiohobbit@gmail.com</a>
+              <button className="contactitem" type="submit">
+                Submit
+              </button>
+              <button className="contactitem" type="reset">
+                Reset
+              </button>
             </div>
           </form>
+          <div>
+            <p>
+              "Sometimes I'll start a sentence, and I don't even know where it's
+              going. I just hope I find it along the way. Like an improv
+              conversation." - Michael Scott
+            </p>
+          </div>
         </section>
       </div>
     );

@@ -24,7 +24,7 @@ html {
   width: 80%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(122, 122, 122, 0.397);
+  background-color: rgba(122, 122, 122, 0.5);
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
@@ -39,8 +39,9 @@ html {
   padding: 15px;
   padding-top: 80px;
   margin: auto;
-  color: black;
-  font-weight: 450;
+  color: white;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.685);
+  font-weight: 600;
 }
 
 .links {
@@ -54,6 +55,9 @@ html {
   margin: auto;
   height: 100%;
   margin-top: 80px;
+  color: white;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.685);
+  font-weight: 600;
 }
 
 .portfolio {
@@ -62,6 +66,9 @@ html {
   margin: auto;
   height: 100%;
   margin-top: 80px;
+  color: white;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.685);
+  font-weight: 600;
 }
 
 .audioshire {
@@ -70,6 +77,9 @@ html {
   padding: 15px;
   padding-top: 80px;
   margin: auto;
+  color: white;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.685);
+  font-weight: 600;
 }
 
 .contactform {
@@ -78,6 +88,9 @@ html {
   padding: 15px;
   padding-top: 80px;
   margin: auto;
+  color: white;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.685);
+  font-weight: 600;
 }
 
 ul {
@@ -253,6 +266,10 @@ a:hover {
 img {
   width: 100%;
   box-shadow: 0px 0px 25px black;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
 }
 
 .audio {
@@ -355,19 +372,29 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .contactbuttons button {
   border: none;
   margin: 10px;
-  font-weight:800;
+  font-weight: 800;
   color: white;
   height: 35px;
   width: 90px;
-  text-shadow:2px 2px 15px rgb(0, 0, 0);
+  text-shadow: 2px 2px 15px rgb(0, 0, 0);
   border-radius: 10px;
   background-color: #1db954;
   box-shadow: 0px 0px 15px rgb(70, 69, 69);
+}
+
+.contactbuttons button:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.contactbuttons button:active {
+  transform: scale(90%);
 }
 
 .contactemail {
@@ -393,6 +420,12 @@ textarea {
   border: none;
   text-align: left;
   padding: 10px;
+}
+
+.gatebox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 @media all and (min-width: 900px) {
@@ -532,5 +565,37 @@ textarea {
     display: unset;
     text-align: center;
     width: 300px;
+  }
+
+  .gateway {
+    margin: auto;
+    margin-top: 80px;
+    align-content: stretch;
+  }
+
+  .gatebox {
+    display: grid;
+ 
+    margin: 0;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    width: 100%;
+  }
+
+  .gateitem {
+    margin: 0;
+    padding: 0;
+  }
+
+  .gateitem img {
+    height: 150px;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .cover {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 }

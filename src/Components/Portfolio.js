@@ -7,6 +7,7 @@ import noteful from "../images/noteful2.jpeg";
 
 class Portfolio extends Component {
   render() {
+    
     return (
       <section className="portfolio">
         <div>
@@ -17,6 +18,7 @@ class Portfolio extends Component {
             <h5>Moviedex</h5>
             <a href="https://moviedex-client.vercel.app/" target="_blank" rel="noreferrer">
               <img
+              id="inner"
                 src={moviedex}
                 width="200"
                 alt="screenshot of Moviedex app with Star Wars results"
