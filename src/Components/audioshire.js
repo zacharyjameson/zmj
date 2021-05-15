@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import julie from "../images/influencerpodcast.png";
 import alyshia from "../images/thatoneaudition.jpg";
 import alejandro from "../images/dealmakerspodcast.jpg";
-import Tilt from 'react-parallax-tilt';
 
 class audioshire extends Component {
   state = {};
@@ -26,13 +25,11 @@ class audioshire extends Component {
           <div className="audioshireGroup">
             <div className="audioItem">
               <a href="https://podcasts.apple.com/us/podcast/the-influencer-podcast/id1229401800">
-              <Tilt tiltReverse={true}>
                 <img
                   src={julie}
                   width="200"
                   alt="Influencer Podcast with Julie Solomon Artwork Cover"
                 />
-                </Tilt>
               </a>
             </div>
             <div className="audioItem">
