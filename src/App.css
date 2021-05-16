@@ -102,6 +102,10 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: #1db954;
+}
+
 a:hover {
   color: #1db954;
 }
@@ -561,6 +565,69 @@ textarea {
     margin: 10px;
   }
 
+  .overlayContainer {
+    position: relative;
+    margin: auto;
+    padding: auto;
+    width: 100%;
+    z-index: 1001;
+  }
+
+  .overlayContainer:hover {
+    width: 100%;
+  }
+
+  .overlayContainer img {
+    width: 100%;
+    z-index: 1001;
+  }
+
+  .overlayContainer .description {
+    position: absolute;
+    z-index: -1;
+  }
+
+  .overlayContainer .projectlinks {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+
+  .overlayContainer:hover .projectlinks {
+    top: 3.2%;
+    left: 10%;
+    width: 100px;
+    margin: auto;
+    z-index: -1;
+    padding-left: 10px;
+    padding-right: 87px;
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 2px solid black;
+    transition: transform 300ms cubic-bezier(0.2, 0.45, 0.8, 0.9);
+    transform: translate3d(-130px, 0, 0);
+  }
+
+  .overlayContainer:hover .description {
+    transition: transform 300ms cubic-bezier(0.2, 0.45, 0.8, 0.9);
+    transform: translate3d(0, 280px, 0);
+    display: block;
+    justify-content: center;
+  }
+
+  .overlayContainer .description {
+    top: 3.2%;
+    left: 10%;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid black;
+  }
+
   .me {
     display: unset;
     text-align: center;
@@ -575,7 +642,6 @@ textarea {
 
   .gatebox {
     display: grid;
- 
     margin: 0;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     width: 100%;
