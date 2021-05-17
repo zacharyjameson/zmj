@@ -16,18 +16,22 @@ function Navbar() {
 
   return (
     <div className="navBar">
-      <h1 className="nav-logo">Zachary Jameson</h1>
+      <Link to="/">
+        <h1 className="nav-logo">Zachary Jameson</h1>
+      </Link>
       <div>
-        <h1 className="meNav">ZMJ</h1>
+        <Link to="/">
+          <h1 className="meNav">ZMJ</h1>
+        </Link>
       </div>
       <nav className="navBar">
         <button onClick={handleToggle}>
           {navbarOpen ? (
-            <MdClose style={{ color: "white", width: "40px", height: "40px" }} />
-          ) : (
-            <FiMenu
+            <MdClose
               style={{ color: "white", width: "40px", height: "40px" }}
             />
+          ) : (
+            <FiMenu style={{ color: "white", width: "40px", height: "40px" }} />
           )}
         </button>
         <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
