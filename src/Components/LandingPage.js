@@ -7,7 +7,7 @@ class LandingPage extends Component {
     return (
       <div className="homepage">
         <section>
-          <h1>Home.</h1>
+          <h2>Home.</h2>
           <div className="homegroup">
             <div className="homeitem">
               <p>Hi there! I'm Zack Jameson, I'm glad you found me.</p>

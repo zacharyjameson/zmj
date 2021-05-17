@@ -33,7 +33,7 @@ function Navbar() {
         <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
           <li>
             <Link to="/" onClick={() => closeMenu()} className="nav-link">
-              bio.
+              home.
             </Link>
           </li>
           <li>

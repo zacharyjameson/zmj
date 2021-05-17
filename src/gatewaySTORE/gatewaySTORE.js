@@ -1,8 +1,9 @@
 import books from "../images/books.jpg";
+import bakerbeach from "../images/bakerbeach.jpg";
 import burrito from "../images/burrito.jpg";
 import sushi from "../images/sushi.jpg";
 import berm from "../images/berm.jpg";
-import casette from "../images/casette.jpg";
+import cassette from "../images/cassette.jpg";
 import coit from "../images/coit.jpg";
 import countryfarm from "../images/countryfarm.jpg";
 import dtsanjose from "../images/dtsanjose.jpg";
@@ -10,6 +11,8 @@ import mistyhands from "../images/mistyhands.jpg";
 import mixboard from "../images/mixboard.jpg";
 import scream from "../images/scream.jpg";
 import xbox from "../images/xbox.jpg";
+import guitar from "../images/guitar.jpg";
+import piano from "../images/piano.jpg";
 
 export default {
   "pictures": [
@@ -20,6 +23,10 @@ export default {
     {
         "picture": berm,
         "id": "big berm"
+    },
+    {
+        "picture": guitar,
+        "id": "guitar"
     },
     {
       "picture": dtsanjose,
@@ -50,7 +57,7 @@ export default {
         "id": "xbox"
     },
     {
-        "picture": casette,
+        "picture": cassette,
         "id": "scritch scratch"
     },
     {
@@ -60,6 +67,14 @@ export default {
     {
         "picture": scream,
         "id": "ah!"
+    },
+    {
+        "picture": piano,
+        "id": "piano"
+    },
+    {
+        "picture": bakerbeach,
+        "id": "baker"
     }
   ],
 }

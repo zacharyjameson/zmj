@@ -10,14 +10,33 @@ class Portfolio extends Component {
     return (
       <section className="portfolio">
         <div>
-          <h2 id="portfolio">Portfolio</h2>
+          <h2>Portfolio.</h2>
         </div>
-        <h3>Technical Skills</h3>
-        <p>
-          Check out my latest web software development portfolio projects
-          utilizing React.JS, Node.JS, JSX, JavaScript, Express, PostgreSQL,
-          jQuery, RESTful API's, HTML/CSS and more.
-        </p>
+        <div className="portfoliohead">
+          <h3>Technical Skills</h3>
+          <ul className="skills">
+            <li className="skillsitem">React</li>
+            <li className="skillsitem">Node.js</li>
+            <li className="skillsitem">JavaScript</li>
+            <li className="skillsitem">JSX</li>
+            <li className="skillsitem">Express</li>
+            <li className="skillsitem">PostgreSQL</li>
+            <li className="skillsitem">jQuery</li>
+            <li className="skillsitem">RESTful API's</li>
+            <li className="skillsitem">HTML/CSS</li>
+            <li className="skillsitem">Agile</li>
+            <li className="skillsitem">JIRA</li>
+          </ul>
+          <p>
+            From helping you decide what movie to watch next, finding what the
+            weather's like around the world or getting some up to date
+            information on how your favorite musician/band is doing and when
+            they'll be coming to town next, check out a select few of my latest
+            web development portfolio projects utilizing React.JS, Node.JS, JSX,
+            JavaScript, Express, PostgreSQL, jQuery, RESTful API's, HTML/CSS and
+            more.
+          </p>
+        </div>
         <ul className="portfoliogroup">
           <li className="portfolioitem">
             <h5>Moviedex</h5>
@@ -32,46 +51,46 @@ class Portfolio extends Component {
                   src={moviedex}
                   className="portfolioimg"
                   width="200"
+                  title="Moviedex"
                   alt="screenshot of Moviedex app with Star Wars results"
                 />
               </a>
-              <div className="description">
-                The purpose of Moviedex is to help users decide on what movie to
-                watch, from a list of saved movies. Moviedex is a React web
-                application that allows users to call a public movie API, OMDb,
-                save/delete those movies to/from Moviedex's server, and then
-                click a button to randomly generate one of those movies as the
-                selected movie to watch.
-              </div>
               <div className="projectlinks">
-                <p>
-                  Repos <br />
-                  <a
-                    href="https://github.com/zacharyjameson/moviedex-client"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Client
-                  </a>{" "}
-                  <br />
-                  <a
-                    href="https://github.com/zacharyjameson/moviedex-server"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Server
-                  </a>
-                </p>
-                <p>
-                  Demo <br />
-                  <a
-                    href="https://moviedex-client.vercel.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Moviedex
-                  </a>
-                </p>
+                <div className="projectlinksitem">
+                  <p>
+                    Repos <br />
+                    <a
+                      href="https://github.com/zacharyjameson/moviedex-client"
+                      target="_blank"
+                      title="Moviedex Client Repo"
+                      rel="noreferrer"
+                    >
+                      Client
+                    </a>{" "}
+                    <br />
+                    <a
+                      href="https://github.com/zacharyjameson/moviedex-server"
+                      target="_blank"
+                      title="Moviedex Server Repo"
+                      rel="noreferrer"
+                    >
+                      Server
+                    </a>
+                  </p>
+                </div>
+                <div className="projectlinksitem">
+                  <p>
+                    Demo <br />
+                    <a
+                      href="https://moviedex-client.vercel.app/"
+                      target="_blank"
+                      title="Moviedex Demo"
+                      rel="noreferrer"
+                    >
+                      Moviedex
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
           </li>
@@ -89,17 +108,14 @@ class Portfolio extends Component {
                   alt="screenshot of weathertop app with san francisco weather results"
                 />
               </a>
-              <div className="description">
-                Simple web application to find the current weather in a queried
-                city. Allows users to return data in imperial or metric systems;
-                but defaults to kelvin if no option is selected.
-              </div>
+
               <div className="projectlinks">
                 <p>
                   Repos <br />
                   <a
                     href="https://github.com/zacharyjameson/weathertop"
                     target="_blank"
+                    title="Weathertop Client Repo"
                     rel="noreferrer"
                   >
                     Client
@@ -111,6 +127,7 @@ class Portfolio extends Component {
                   <a
                     href="https://zacharyjameson.github.io/weathertop"
                     target="_blank"
+                    title="Weathertop Demo"
                     rel="noreferrer"
                   >
                     Weathertop
@@ -133,22 +150,14 @@ class Portfolio extends Component {
                   alt="screenshot of musiciandex homepage"
                 />
               </a>
-              <div className="description">
-                I wanted to build a place where users could both check in on
-                upcoming events as well as get information on background and
-                most listened to albums of users' favorite artists as well as a
-                tool to get a snapshot view of artists they haven't listened to
-                yet. Users are able to enter in a band, artist or musician name
-                and Musiciandex will return the respective description of the
-                input, upcoming events and top 3 albums of the respective
-                artist. Refactoring for React utilization coming soon!
-              </div>
+
               <div className="projectlinks">
                 <p>
                   Repos <br />
                   <a
                     href="https://github.com/zacharyjameson/musiciandex"
                     target="_blank"
+                    title="Musiciandex Client Repo"
                     rel="noreferrer"
                   >
                     Client
@@ -159,6 +168,7 @@ class Portfolio extends Component {
                   <a
                     href="https://zacharyjameson.github.io/musiciandex/"
                     target="_blank"
+                    title="Musiciandex Demo"
                     rel="noreferrer"
                   >
                     Musiciandex
@@ -167,40 +177,45 @@ class Portfolio extends Component {
               </div>
             </div>
           </li>
-          <div className="portfoliogroup">
-            <li className="portfolioitem">
-              <h5>One Quiz to Rule Them All</h5>
-              <div className="overlayContainer">
-                <a href="https://zacharyjameson.github.io/quiz-app/">
-                  <img
-                    src={quizapp}
-                    width="200"
-                    alt="screen shot of quiz app question"
-                  />
-                </a>
-                <div className="description">
-                  A meme-based quiz app going over the trials, tribulations and
-                  overall tomfoolery in Middle Earth. Built using HTML, CSS,
-                  JavaScript, and jQuery.
-                </div>
-                <div className="projectlinks">
-                  <p>
-                    Repos <br />
-                    <a href="https://github.com/zacharyjameson/quiz-app">
-                      Client
-                    </a>
-                  </p>
-                  <p>
-                    Demo <br />
-                    <a href="https://zacharyjameson.github.io/quiz-app/">
-                      Quiz
-                    </a>
-                  </p>
-                </div>
+          <li className="portfolioitem">
+            <h5>One Quiz to Rule Them All</h5>
+            <div className="overlayContainer">
+              <a href="https://zacharyjameson.github.io/quiz-app/">
+                <img
+                  src={quizapp}
+                  width="200"
+                  alt="screen shot of quiz app question"
+                />
+              </a>
+              <div className="projectlinks">
+                <p>
+                  Repos <br />
+                  <a
+                    href="https://github.com/zacharyjameson/quiz-app"
+                    target="_blank"
+                    rel="noreferrer"
+                    title="LOTR Quiz App Repo"
+                  >
+                    Client
+                  </a>
+                </p>
+                <p>
+                  Demo <br />
+                  <a
+                    href="https://zacharyjameson.github.io/quiz-app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    title="LOTR Quiz Demo"
+                  >
+                    LOTRquiz
+                  </a>
+                </p>
               </div>
-            </li>
-            <li className="portfolioitem">
-              <h5>Noteful</h5>
+            </div>
+          </li>
+          <li className="portfolioitem">
+            <h5>Noteful</h5>
+            <div className="overlayContainer">
               <a
                 href="https://noteful-inky.vercel.app/"
                 target="_blank"
@@ -208,58 +223,41 @@ class Portfolio extends Component {
               >
                 <img src={noteful} width="200" alt="noteful demo screenshot" />
               </a>
-              <p>
-                Utilizing React, JSX, CSS, JavaScript, Postgres, Express,
-                Node.js, Vercel, Heroku & React (Router & Context) to create a
-                full stack notes application that allows users to create folders
-                that contain various notes included in a given folder. A server
-                and database was built as the backend as well, which can be
-                viewed
-                <a
-                  href="https://github.com/zacharyjameson/noteful-server"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  here
-                </a>
-                .
-              </p>
-              <p>
-                Client Repo:
-                <a
-                  href="https://github.com/zacharyjameson/noteful"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  github.com/zacharyjameson/noteful
-                </a>
-              </p>
-              <p>
-                Server Repo:
-                <a
-                  href="https://github.com/zacharyjameson/noteful-server"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  github.com/zacharyjameson/noteful-server
-                </a>
-              </p>
-              <p>
-                Live App:
-                <a
-                  href="https://noteful-inky.vercel.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Noteful
-                </a>
-              </p>
-              <p>
-                Skills Used: HTML, CSS, React, JSX, Heroku, Vercel, Postgres,
-                Node.js, Express and JavaScript
-              </p>
-            </li>
-          </div>
+              <div className="projectlinks">
+                <p>
+                  Repos <br />
+                  <a
+                    href="https://github.com/zacharyjameson/noteful"
+                    target="_blank"
+                    rel="noreferrer"
+                    title="Noteful Client Repo"
+                  >
+                    Client
+                  </a>
+                  <br />
+                  <a
+                    href="https://github.com/zacharyjameson/noteful-server"
+                    target="_blank"
+                    rel="noreferrer"
+                    title="Noteful Server Repo"
+                  >
+                    Server
+                  </a>
+                </p>
+                <p>
+                  Demo <br />
+                  <a
+                    href="https://noteful-inky.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    title="Noteful Demo"
+                  >
+                    Noteful
+                  </a>
+                </p>
+              </div>
+            </div>
+          </li>
         </ul>
       </section>
     );
