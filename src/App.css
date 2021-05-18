@@ -471,6 +471,10 @@ textarea {
   height: 100%
 }
 
+.projectlinks a {
+  color: #1db954;
+}
+
 .skills {
   display: flex;
   flex-direction: row;

@@ -41,11 +41,6 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/bio" onClick={() => closeMenu()} className="nav-link">
-              career.
-            </Link>
-          </li>
-          <li>
             <Link
               to="/portfolio"
               onClick={() => closeMenu()}
@@ -61,6 +56,11 @@ function Navbar() {
               className="nav-link"
             >
               audioshire.
+            </Link>
+          </li>
+          <li>
+            <Link to="/career" onClick={() => closeMenu()} className="nav-link">
+              career.
             </Link>
           </li>
           <li>

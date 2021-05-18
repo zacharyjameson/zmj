@@ -16,7 +16,7 @@ class LandingPage extends Component {
               </p>
               <p>
                 Take a look around my site and feel free to{" "}
-                <Link to="contactme" className="links">
+                <Link to="/contactme" className="links">
                   contact me!
                 </Link>
               </p>

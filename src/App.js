@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <>
         <Route exact path="/" component={LandingPage} />
-        <Route path="/bio" component={Bio} />
+        <Route path="/career" component={Bio} />
         <Route path="/contactme" component={Contact} />
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/audioshire" component={audioshire} />
