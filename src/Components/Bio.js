@@ -30,9 +30,10 @@ class Bio extends Component {
           <div className="item">
             <p>
               When I'm not developing my coding skills (which is rare these
-              days), you can usually find me composing, editing, or playing
+              days), you can usually find me on my mountain bike, playing video
+              games with my friends, or composing, editing, and/or playing
               music. I certainly try to keep my music abilities genre-fluid, but
-              admittedly, my compositions have a strong tendency toward
+              admittedly, my compositions typically have a strong tendency toward
               classical/instrumental, progressive rock; a la Ólafur Arnalds,
               Tycho, or Explosions in the Sky.
             </p>

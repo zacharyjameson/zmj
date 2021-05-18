@@ -291,7 +291,7 @@ img {
 }
 
 .audio {
-  width: 80%;
+  width: 100%;
   border-radius: 100px;
 }
 
@@ -316,9 +316,7 @@ img {
 .group {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  align-content: center;
+  justify-content: space-between;
   margin-bottom: 50px;
 }
 
@@ -484,7 +482,7 @@ textarea {
 }
 
 .skillsitem {
-  margin: 10px;
+  margin: 8px;
   color: white;
   font-weight: bolder;
 }
@@ -515,18 +513,20 @@ textarea {
   .audioshireGroup {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
 
   .audioItem {
-    width: 275px;
+    flex: 1;
+    width: 375px;
   }
 
   .group {
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   .socialsGroup {
@@ -537,6 +537,11 @@ textarea {
     top: calc(50% - (275px / 2));
     width: 55px;
     height: 275px;
+  }
+  
+  .item img{
+    text-align: right;
+    justify-content: right;
   }
 
   .socialsbar a {

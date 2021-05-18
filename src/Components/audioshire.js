@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import julie from "../images/influencerpodcast.png";
 import alyshia from "../images/thatoneaudition.jpg";
 import alejandro from "../images/dealmakerspodcast.jpg";
+import canadabay from "../images/canadabay.jpg";
+import marketingbookpodcast from "../images/marketingbookpodcast.jpg";
+import shestartsup from "../images/shestartsup.png";
 
 class audioshire extends Component {
   state = {};
@@ -11,15 +14,39 @@ class audioshire extends Component {
         <section>
           <div>
             <h2 id="audioshire">audioshire.</h2>
+            <h3>Technical Skills</h3>
+            <ul className="skills">
+              <li className="skillsitem">Cubase</li>
+              <li className="skillsitem">Audacity</li>
+              <li className="skillsitem">Final Cut Pro</li>
+              <li className="skillsitem">Logic Pro</li>
+              <li className="skillsitem">Multiband Compression</li>
+              <li className="skillsitem">Mixing & Mastering</li>
+              <li className="skillsitem">Corrective Equalization</li>
+              <li className="skillsitem">Balancing</li>
+              <li className="skillsitem">Tone Shaping</li>
+              <li className="skillsitem">Audio/Visual Editing</li>
+              <li className="skillsitem">ID3</li>
+              <li className="skillsitem">Audio Cleaning</li>
+            </ul>
             <p>
               audioshire. was started during my college years out of a desire to
               fund my academic career, debt free, with a passion project - audio
-              production. audioshire provides end to end audio pre & post
-              production services for podcasts, corporate videos, broadcasts,
-              audio focused mobile apps like walking tours and meditation, and
-              much more. Please take a look at some of the projects I've worked
-              on with clients around the world that helped make that goal a
-              success!
+              and video production. audioshire provides end to end audio pre &
+              post production services for podcasts, corporate videos,
+              broadcasts, audio focused mobile apps like walking tours and
+              meditation, and much more. Please take a look at some of the
+              projects I've worked on and the awesome clients around the world that helped
+              make that goal a success!
+            </p>
+            <p>
+              These project teams are located across the world, each utilizing
+              their own project management system including Asana, JIRA,
+              Basecamp, or Notion; where I'm responsible for updating my project
+              task cards multiple times week to keep up with the numerous
+              project releases we have each and every week, coordinating with
+              internal and external marketing teams/vendors, writers, engineers
+              and more.
             </p>
           </div>
           <div className="audioshireGroup">
@@ -29,6 +56,7 @@ class audioshire extends Component {
                   src={julie}
                   width="200"
                   alt="Influencer Podcast with Julie Solomon Artwork Cover"
+                  title="The Influencer Podcast with Julie Solomon"
                 />
               </a>
             </div>
@@ -38,6 +66,7 @@ class audioshire extends Component {
                   src={alyshia}
                   width="200"
                   alt="That One Audition Podcast with Alyshia Ochse Artwork Cover"
+                  title="That One Audition with Alyshia Ochse"
                 />
               </a>
             </div>
@@ -47,8 +76,41 @@ class audioshire extends Component {
                   src={alejandro}
                   width="200"
                   alt="DealMaker's Podcast with Alejandro Cremades Artwork Cover"
+                  title="Dealmaker's Podcast with Alejandro Cremades"
                 />
               </a>
+            </div>
+            <div className="audioshireGroup">
+              <div className="audioItem">
+                <a href="https://www.salesartillery.com/marketing-book-podcast">
+                  <img
+                    src={marketingbookpodcast}
+                    width="200"
+                    alt="Marketing Book Podcast"
+                    title="Marketing Book Podcast"
+                  />
+                </a>
+              </div>
+              <div className="audioItem">
+                <a href="https://monamiejanine.com/podcast">
+                  <img
+                    src={shestartsup}
+                    width="200"
+                    alt="She Starts Up"
+                    title="She Starts Up with Janine Sickmeyer"
+                  />
+                </a>
+              </div>
+              <div className="audioItem">
+                <a href="https://www.canadabay.nsw.gov.au/lifestyle/sports-and-recreation/walks-and-guides">
+                  <img
+                    src={canadabay}
+                    width="200"
+                    alt="Canada Bay Walking Tour Audio Guide"
+                    title="Canada Bay Walking Tour Audio Guide"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </section>
