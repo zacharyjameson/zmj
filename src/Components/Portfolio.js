@@ -18,7 +18,7 @@ class Portfolio extends Component {
             <li className="skillsitem">React</li>
             <li className="skillsitem">Node.js</li>
             <li className="skillsitem">JavaScript</li>
-            <li className="skillsitem">JSX</li>
+            <li className="skillsitem">VS Code</li>
             <li className="skillsitem">Express</li>
             <li className="skillsitem">PostgreSQL</li>
             <li className="skillsitem">jQuery</li>

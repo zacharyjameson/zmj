@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import me from "../images/updatedz.jpg";
 import { Link } from "react-router-dom";
 
-class LandingPage extends Component {
+class Homepage extends Component {
   render() {
     return (
       <div className="homepage">
@@ -39,21 +39,6 @@ class LandingPage extends Component {
                   mostly dead; but not <em>all</em> dead.
                 </li>
               </ol>
-              <p>And a few services and traits I bring to the table:</p>
-              <ul>
-                <li>
-                  Full Stack Web Development utilizing React, JavaScript, JSX,
-                  Node.js, Postgres, Express, Heroku, Vercel, and HTML/CSS
-                  development
-                </li>
-                <li>
-                  A desire to consistently push my skills as well as the team
-                  each day to produce more efficient and higher quality content.
-                </li>
-                <li>Web page design and development</li>
-                <li>Human factors and ergonomic considerations</li>
-                <li>A positive attitude</li>
-              </ul>
             </div>
             <div className="homeitem me">
                 <img
@@ -69,4 +54,4 @@ class LandingPage extends Component {
   }
 }
 
-export default LandingPage;
+export default Homepage;

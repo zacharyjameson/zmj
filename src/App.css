@@ -5,6 +5,8 @@
 * {
   box-sizing: border-box;
   font-family: fairlyodd;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 html {
@@ -19,14 +21,10 @@ html {
 
 .App_main {
   position: fixed;
-  left: 10%;
   margin: 0;
-  width: 80%;
+  width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(122, 122, 122, 0.5);
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
 }
 
 .App_main::-webkit-scrollbar {
@@ -48,12 +46,63 @@ h5 {
 .homepage {
   width: 80%;
   height: 100%;
+  overflow-x: hidden;
   padding: 15px;
   padding-top: 80px;
   margin: auto;
   color: white;
-  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.685);
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
   font-weight: 600;
+  background-color: rgba(122, 122, 122, 0.5);
+  padding: 80px;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  margin: auto;
+  color: white;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.landing h1 {
+  margin: 0;
+}
+
+.landing button {
+  border: none;
+  margin: 10px;
+  font-weight: 800;
+  color: white;
+  height: 45px;
+  width: 120px;
+  text-shadow: 2px 2px 15px rgb(0, 0, 0);
+  border-radius: 10px;
+  background-color: #1db954;
+  box-shadow: 0px 0px 15px rgb(70, 69, 69);
+}
+
+.landing button:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  color: white;
+}
+
+.landing button:active {
+  transform: scale(90%);
+}
+
+.landing a {
+  color: white;
+}
+
+.landing a:hover {
+  color: white;
 }
 
 .links {
@@ -64,45 +113,55 @@ h5 {
 .bio {
   width: 80%;
   height: 100%;
+  overflow-x: hidden;
   padding: 15px;
   padding-top: 80px;
   margin: auto;
   color: white;
-  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.685);
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
   font-weight: 600;
+  background-color: rgba(122, 122, 122, 0.5);
+  padding: 80px;
 }
 
 .portfolio {
   width: 80%;
   height: 100%;
+  overflow-x: hidden;
   padding: 15px;
   padding-top: 80px;
   margin: auto;
   color: white;
-  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.685);
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
   font-weight: 600;
+  background-color: rgba(122, 122, 122, 0.5);
+  padding: 80px;
 }
 
 .audioshire {
   width: 80%;
   height: 100%;
+  overflow-x: hidden;
   padding: 15px;
   padding-top: 80px;
   margin: auto;
   color: white;
-  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.685);
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
   font-weight: 600;
+  background-color: rgba(122, 122, 122, 0.5);
+  padding: 80px;
 }
 
 .contactform {
   width: 80%;
-  height: 100%;
   padding: 15px;
   padding-top: 80px;
   margin: auto;
   color: white;
-  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.685);
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
   font-weight: 600;
+  background-color: rgba(122, 122, 122, 0.5);
+  padding: 80px;
 }
 
 ul {
@@ -468,7 +527,7 @@ textarea {
   margin: 0 auto;
   padding: 0;
   width: 175px;
-  height: 100%
+  height: 100%;
 }
 
 .projectlinks a {
@@ -507,7 +566,7 @@ textarea {
   font-style: italic;
   left: 50%;
   width: 400px;
-  background:rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
   padding: 10px;
 }
@@ -542,8 +601,8 @@ textarea {
     width: 55px;
     height: 275px;
   }
-  
-  .item img{
+
+  .item img {
     text-align: right;
     justify-content: right;
   }
@@ -712,8 +771,18 @@ textarea {
 
   .gateway {
     margin: auto;
-    margin-top: 80px;
     align-content: stretch;
+    width: 80%;
+    height: 100%;
+    overflow-x: hidden;
+    padding: 15px;
+    padding-top: 80px;
+    margin: auto;
+    color: white;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+    background-color: rgba(122, 122, 122, 0.5);
+    padding: 80px;
   }
 
   .gatebox {
