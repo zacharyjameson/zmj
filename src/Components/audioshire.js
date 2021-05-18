@@ -14,40 +14,42 @@ class audioshire extends Component {
         <section>
           <div>
             <h2 id="audioshire">audioshire.</h2>
-            <h3>Technical Skills</h3>
-            <ul className="skills">
-              <li className="skillsitem">Cubase</li>
-              <li className="skillsitem">Audacity</li>
-              <li className="skillsitem">Final Cut Pro</li>
-              <li className="skillsitem">Logic Pro</li>
-              <li className="skillsitem">Multiband Compression</li>
-              <li className="skillsitem">Mixing & Mastering</li>
-              <li className="skillsitem">Corrective Equalization</li>
-              <li className="skillsitem">Balancing</li>
-              <li className="skillsitem">Tone Shaping</li>
-              <li className="skillsitem">Audio/Visual Editing</li>
-              <li className="skillsitem">ID3</li>
-              <li className="skillsitem">Audio Cleaning</li>
-            </ul>
-            <p>
-              audioshire. was started during my college years out of a desire to
-              fund my academic career, debt free, with a passion project - audio
-              and video production. audioshire provides end to end audio pre &
-              post production services for podcasts, corporate videos,
-              broadcasts, audio focused mobile apps like walking tours and
-              meditation, and much more. Please take a look at some of the
-              projects I've worked on and the awesome clients around the world that helped
-              make that goal a success!
-            </p>
-            <p>
-              These project teams are located across the world, each utilizing
-              their own project management system including Asana, JIRA,
-              Basecamp, or Notion; where I'm responsible for updating my project
-              task cards multiple times week to keep up with the numerous
-              project releases we have each and every week, coordinating with
-              internal and external marketing teams/vendors, writers, engineers
-              and more.
-            </p>
+            <div className="portfoliohead">
+              <h3>Technical Skills</h3>
+              <ul className="skills">
+                <li className="skillsitem">Cubase</li>
+                <li className="skillsitem">Audacity</li>
+                <li className="skillsitem">Final Cut Pro</li>
+                <li className="skillsitem">Logic Pro</li>
+                <li className="skillsitem">Multiband Compression</li>
+                <li className="skillsitem">Mixing & Mastering</li>
+                <li className="skillsitem">Corrective Equalization</li>
+                <li className="skillsitem">Balancing</li>
+                <li className="skillsitem">Tone Shaping</li>
+                <li className="skillsitem">Audio/Visual Editing</li>
+                <li className="skillsitem">ID3</li>
+                <li className="skillsitem">Audio Cleaning</li>
+              </ul>
+              <p>
+                audioshire. was started during my college years out of a desire
+                to fund my academic career, debt free, with a passion project -
+                audio and video production. audioshire provides end to end audio
+                pre & post production services for podcasts, corporate videos,
+                broadcasts, audio focused mobile apps like walking tours and
+                meditation, and much more. Please take a look at some of the
+                projects I've worked on and the awesome clients around the world
+                that helped make that goal a success!
+              </p>
+              <p>
+                These project teams are located across the world, each utilizing
+                their own project management system including Asana, JIRA,
+                Basecamp, or Notion; where I'm responsible for updating my
+                project task cards multiple times week to keep up with the
+                numerous project releases we have each and every week,
+                coordinating with internal and external marketing teams/vendors,
+                writers, engineers and more.
+              </p>
+            </div>
           </div>
           <div className="audioshireGroup">
             <div className="audioItem">
