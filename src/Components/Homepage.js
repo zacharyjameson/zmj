@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import me from "../images/updatedz.jpg";
 import { Link } from "react-router-dom";
+import { faSpotify } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Homepage extends Component {
   render() {
@@ -41,12 +43,13 @@ class Homepage extends Component {
               </ol>
             </div>
             <div className="homeitem me">
-                <img
-                  className="me"
-                  src={me}
-                  alt="portrait of Zachary Jameson's face in black & white"
-                />
+              <img
+                className="me"
+                src={me}
+                alt="portrait of Zachary Jameson's face in black & white"
+              />
             </div>
+            
           </div>
         </section>
       </div>
