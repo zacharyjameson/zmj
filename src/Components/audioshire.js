@@ -56,7 +56,6 @@ class audioshire extends Component {
               <a href="https://podcasts.apple.com/us/podcast/the-influencer-podcast/id1229401800">
                 <img
                   src={julie}
-                  width="200"
                   alt="Influencer Podcast with Julie Solomon Artwork Cover"
                   title="The Influencer Podcast with Julie Solomon"
                 />
@@ -66,7 +65,6 @@ class audioshire extends Component {
               <a href="https://podcasts.apple.com/us/podcast/that-one-audition-with-alyshia-ochse/id1262208420">
                 <img
                   src={alyshia}
-                  width="200"
                   alt="That One Audition Podcast with Alyshia Ochse Artwork Cover"
                   title="That One Audition with Alyshia Ochse"
                 />
@@ -76,43 +74,37 @@ class audioshire extends Component {
               <a href="https://podcasts.apple.com/us/podcast/dealmakers/id1439149348">
                 <img
                   src={alejandro}
-                  width="200"
                   alt="DealMaker's Podcast with Alejandro Cremades Artwork Cover"
                   title="Dealmaker's Podcast with Alejandro Cremades"
                 />
               </a>
             </div>
-            <div className="audioshireGroup">
-              <div className="audioItem">
-                <a href="https://www.salesartillery.com/marketing-book-podcast">
-                  <img
-                    src={marketingbookpodcast}
-                    width="200"
-                    alt="Marketing Book Podcast"
-                    title="Marketing Book Podcast"
-                  />
-                </a>
-              </div>
-              <div className="audioItem">
-                <a href="https://monamiejanine.com/podcast">
-                  <img
-                    src={shestartsup}
-                    width="200"
-                    alt="She Starts Up"
-                    title="She Starts Up with Janine Sickmeyer"
-                  />
-                </a>
-              </div>
-              <div className="audioItem">
-                <a href="https://www.canadabay.nsw.gov.au/lifestyle/sports-and-recreation/walks-and-guides">
-                  <img
-                    src={canadabay}
-                    width="200"
-                    alt="Canada Bay Walking Tour Audio Guide"
-                    title="Canada Bay Walking Tour Audio Guide"
-                  />
-                </a>
-              </div>
+            <div className="audioItem">
+              <a href="https://www.salesartillery.com/marketing-book-podcast">
+                <img
+                  src={marketingbookpodcast}
+                  alt="Marketing Book Podcast"
+                  title="Marketing Book Podcast"
+                />
+              </a>
+            </div>
+            <div className="audioItem">
+              <a href="https://monamiejanine.com/podcast">
+                <img
+                  src={shestartsup}
+                  alt="She Starts Up"
+                  title="She Starts Up with Janine Sickmeyer"
+                />
+              </a>
+            </div>
+            <div className="audioItem">
+              <a href="https://www.canadabay.nsw.gov.au/lifestyle/sports-and-recreation/walks-and-guides">
+                <img
+                  src={canadabay}
+                  alt="Canada Bay Walking Tour Audio Guide"
+                  title="Canada Bay Walking Tour Audio Guide"
+                />
+              </a>
             </div>
           </div>
         </section>
