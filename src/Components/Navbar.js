@@ -36,11 +36,6 @@ function Navbar() {
         </button>
         <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
           <li>
-            <Link to="/home" onClick={() => closeMenu()} className="nav-link">
-              home.
-            </Link>
-          </li>
-          <li>
             <Link
               to="/portfolio"
               onClick={() => closeMenu()}
@@ -56,6 +51,11 @@ function Navbar() {
               className="nav-link"
             >
               audioshire.
+            </Link>
+          </li>
+          <li>
+            <Link to="/bio" onClick={() => closeMenu()} className="nav-link">
+              bio.
             </Link>
           </li>
           <li>

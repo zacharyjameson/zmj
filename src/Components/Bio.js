@@ -1,52 +1,56 @@
 import React, { Component } from "react";
-import inserts from "../images/audio.jpg";
+import me from "../images/updatedz.jpg";
+import { Link } from "react-router-dom";
 
 class Bio extends Component {
-  state = {};
   render() {
     return (
-      <section className="bio">
-        <div>
-          <h2 id="career">Career.</h2>
-          <p>
-            After completing my collegiate career with my audio production
-            company audioshire. being the main monetary driver, I found myself
-            searching for something more; another avenue of creation,
-            development, and growth. Shortly thereafter, I sunk myself into a
-            successful Technical Recruiting position as a way to expose myself
-            to a myriad of potential career paths. Fairly early on, I discovered
-            that my core values aligned with software development e.g. constant
-            growth, learning, and building things; it became a natural interest
-            and a skill that I have begun to fiercely nurture. The same work
-            ethic, collaboration, and discipline that made funding my education
-            through a passion project a reality will guide me toward a
-            successful software & web development career. The next step in my
-            career is ideally on a team of knowledgeable, hardworking, and fun
-            developers where I can learn and grow myself into an indispensable
-            developer for them.
-          </p>
-        </div>
-        <div className="group">
-          <div className="item">
-            <p>
-              When I'm not developing my coding skills (which is rare these
-              days), you can usually find me on my mountain bike, playing video
-              games with my friends, or composing, editing, and/or playing
-              music. I certainly try to keep my music abilities genre-fluid, but
-              admittedly, my compositions typically have a strong tendency toward
-              classical/instrumental, progressive rock; a la Ólafur Arnalds,
-              Tycho, or Explosions in the Sky.
-            </p>
+      <div className="homepage">
+        <section>
+          <h2>Home.</h2>
+          <div className="homegroup">
+            <div className="homeitem">
+              <p>Hi there! I'm Zack Jameson, I'm glad you found me.</p>
+              <p>
+                I'm a software developer from California, living in Raleigh, NC
+              </p>
+              <p>
+                Take a look around my site and feel free to{" "}
+                <Link to="/contactme" className="links">
+                  contact me!
+                </Link>
+              </p>
+              <p>3 things you should know about me:</p>
+              <ol>
+                <li>
+                  I have a passion for learning, growth, and self-development
+                  that feeds my increasing interest in software development and
+                  web design.
+                </li>
+                <li>
+                  People can be motivated by a number of different things:
+                  money, time, fear, hunger, love, family, etc. I am, however,
+                  motivated by a desire to produce worth-while, high-quality
+                  content while collaborating with like-minded individuals
+                  working toward a common goal.
+                </li>
+                <li>
+                  As Mel Brooks would say, the 2020 quarantine has made me
+                  mostly dead; but not <em>all</em> dead.
+                </li>
+              </ol>
+            </div>
+            <div className="homeitem me">
+              <img
+                className="me"
+                src={me}
+                alt="portrait of Zachary Jameson's face in black & white"
+              />
+            </div>
+            
           </div>
-          <div className="item">
-            <img
-              className="audio"
-              src={inserts}
-              alt="silhouette of human in front of lit computer screen at desk with music equipment surrounding"
-            />
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     );
   }
 }

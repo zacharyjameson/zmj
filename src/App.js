@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import "./App.css";
 import { Route } from "react-router-dom";
 import audioshire from "./Components/audioshire";
-import Bio from "./Components/Bio";
+import Career from "./Components/Career";
 import Contact from "./Components/ContactMe";
-import Homepage from "./Components/Homepage";
+import Bio from "./Components/Career";
 import Portfolio from "./Components/Portfolio";
 import Socialsbar from "./Components/Socialsbar";
 import Navbar from "./Components/Navbar";
@@ -16,8 +16,8 @@ class App extends Component {
     return (
       <>
         <Route exact path="/" component={Landing} />
-        <Route path="/home" component={Homepage} />
-        <Route path="/career" component={Bio} />
+        <Route path="/bio" component={Bio} />
+        <Route path="/career" component={Career} />
         <Route path="/contactme" component={Contact} />
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/audioshire" component={audioshire} />
