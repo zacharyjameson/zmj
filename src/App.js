@@ -4,7 +4,7 @@ import { Route } from "react-router-dom";
 import audioshire from "./Components/audioshire";
 import Career from "./Components/Career";
 import Contact from "./Components/ContactMe";
-import Bio from "./Components/Career";
+import Bio from "./Components/Bio";
 import Portfolio from "./Components/Portfolio";
 import Socialsbar from "./Components/Socialsbar";
 import Navbar from "./Components/Navbar";
