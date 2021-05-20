@@ -7,7 +7,7 @@ class Bio extends Component {
     return (
       <div className="homepage">
         <section>
-          <h2>Home.</h2>
+          <h2>Bio.</h2>
           <div className="homegroup">
             <div className="homeitem">
               <p>Hi there! I'm Zack Jameson, I'm glad you found me.</p>
