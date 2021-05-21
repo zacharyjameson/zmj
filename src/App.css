@@ -155,6 +155,8 @@ h5 {
 
 .contactform {
   width: 80%;
+  height: 100%;
+  overflow-x: hidden;
   padding: 15px;
   padding-top: 80px;
   margin: auto;
