@@ -4,6 +4,7 @@ import weathertop from "../images/weathertop.jpeg";
 import musiciandex from "../images/musiciandexresults.jpeg";
 import quizapp from "../images/quizapp.jpeg";
 import noteful from "../images/noteful2.jpeg";
+import watchlist from "../images/Watchlist.jpeg";
 
 class Portfolio extends Component {
   render() {
@@ -88,6 +89,62 @@ class Portfolio extends Component {
                       rel="noreferrer"
                     >
                       Moviedex
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li className="portfolioitem">
+            <h5>Locksley Finance</h5>
+            <div className="overlayContainer">
+              <a
+                href="https://locksley.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  id="inner"
+                  src={watchlist}
+                  className="portfolioimg"
+                  width="200"
+                  title="Locksley"
+                  alt="screenshot of Locksley watchlist"
+                />
+              </a>
+              <div className="projectlinks">
+                <div className="projectlinksitem">
+                  <p>
+                    Repos <br />
+                    <a
+                      href="https://github.com/zacharyjameson/locksley-client"
+                      target="_blank"
+                      title="Locksley Client Repo"
+                      rel="noreferrer"
+                    >
+                      Client
+                    </a>{" "}
+                    <br />
+                    <a
+                      href="https://github.com/zacharyjameson/locksley-server"
+                      target="_blank"
+                      title="Locksley Server Repo"
+                      rel="noreferrer"
+                    >
+                      Server
+                    </a>
+                  </p>
+                </div>
+                <div className="projectlinksitem">
+                  <p>
+                    Demo <br />
+                    <a
+                      href="https://locksley.vercel.app/"
+                      target="_blank"
+                      title="Moviedex Demo"
+                      rel="noreferrer"
+                    >
+                      Locksley Finance
                     </a>
                   </p>
                 </div>
