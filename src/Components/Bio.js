@@ -12,7 +12,7 @@ class Bio extends Component {
             <div className="homeitem">
               <p>Hi there! I'm Zack Jameson, I'm glad you found me.</p>
               <p>
-                I'm a software developer from California, living in Raleigh, NC
+                I'm a Cloud Engineer & Full Stack Developer from California, currently living in Raleigh, NC
               </p>
               <p>
                 Take a look around my site and feel free to{" "}
