@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import audioshire from "./pages/audioshire";
 import Career from "./pages/Career";
 import Contact from "./pages/ContactMe";
@@ -14,15 +14,15 @@ import Landing from "./pages/Landing";
 class App extends Component {
   renderMainRoutes() {
     return (
-      <>
-        <Route exact path="/" component={Landing} />
-        <Route path="/bio" component={Bio} />
-        <Route path="/career" component={Career} />
-        <Route path="/contactme" component={Contact} />
-        <Route path="/portfolio" component={Portfolio} />
-        <Route path="/audioshire" component={audioshire} />
-        <Route path="/interests" component={Gateway} />
-      </>
+      <Routes>
+        <Route path="/" Component={Landing} />
+        <Route path="/bio" Component={Bio} />
+        <Route path="/career" Component={Career} />
+        <Route path="/contactme" Component={Contact} />
+        <Route path="/portfolio" Component={Portfolio} />
+        <Route path="/audioshire" Component={audioshire} />
+        <Route path="/interests" Component={Gateway} />
+      </Routes>
     );
   }
 
