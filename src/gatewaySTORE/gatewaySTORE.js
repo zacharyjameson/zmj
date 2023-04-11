@@ -14,67 +14,69 @@ import xbox from "../images/xbox.jpg";
 import guitar from "../images/guitar.jpg";
 import piano from "../images/piano.jpg";
 
-export default {
-  "pictures": [
+const store = {
+  pictures: [
     {
-      "picture": burrito,
-      "id": "yum"
+      picture: burrito,
+      id: "yum",
     },
     {
-        "picture": berm,
-        "id": "big berm"
+      picture: berm,
+      id: "big berm",
     },
     {
-        "picture": guitar,
-        "id": "guitar"
+      picture: guitar,
+      id: "guitar",
     },
     {
-      "picture": dtsanjose,
-      "hello": "yes hello"
+      picture: dtsanjose,
+      hello: "yes hello",
     },
     {
-        "picture": mixboard,
-        "id": "music"
+      picture: mixboard,
+      id: "music",
     },
     {
-        "picture": countryfarm,
-        "id": "yeehaw"
+      picture: countryfarm,
+      id: "yeehaw",
     },
     {
-        "picture": sushi,
-        "id": "tilted"
+      picture: sushi,
+      id: "tilted",
     },
     {
-        "picture": coit,
-        "id": "this is nice"
+      picture: coit,
+      id: "this is nice",
     },
     {
-        "picture": mistyhands,
-        "id": "ooo it's looking good"
+      picture: mistyhands,
+      id: "ooo it's looking good",
     },
     {
-        "picture": xbox,
-        "id": "xbox"
+      picture: xbox,
+      id: "xbox",
     },
     {
-        "picture": cassette,
-        "id": "scritch scratch"
+      picture: cassette,
+      id: "scritch scratch",
     },
     {
-        "picture": books,
-        "id": "yum"
+      picture: books,
+      id: "yum",
     },
     {
-        "picture": scream,
-        "id": "ah!"
+      picture: scream,
+      id: "ah!",
     },
     {
-        "picture": piano,
-        "id": "piano"
+      picture: piano,
+      id: "piano",
     },
     {
-        "picture": bakerbeach,
-        "id": "baker"
-    }
+      picture: bakerbeach,
+      id: "baker",
+    },
   ],
-}
+};
+
+export default store;

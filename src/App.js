@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import "./App.css";
 import { Route } from "react-router-dom";
-import audioshire from "./Components/audioshire";
-import Career from "./Components/Career";
-import Contact from "./Components/ContactMe";
-import Bio from "./Components/Bio";
-import Portfolio from "./Components/Portfolio";
-import Socialsbar from "./Components/Socialsbar";
-import Navbar from "./Components/Navbar";
-import Gateway from "./Components/Gate";
-import Landing from "./Components/Landing";
+import audioshire from "./pages/audioshire";
+import Career from "./pages/Career";
+import Contact from "./pages/ContactMe";
+import Bio from "./pages/Bio";
+import Portfolio from "./pages/Portfolio";
+import Socialsbar from "./components/Socialsbar";
+import Navbar from "./components/Navbar";
+import Gateway from "./components/Gate";
+import Landing from "./pages/Landing";
 
 class App extends Component {
   renderMainRoutes() {
