@@ -5,7 +5,6 @@ import musiciandex from "../images/musiciandexresults.jpeg";
 import quizapp from "../images/quizapp.jpeg";
 import noteful from "../images/noteful2.jpeg";
 import watchlist from "../images/Watchlist.jpeg";
-
 class Portfolio extends Component {
   render() {
     return (
@@ -29,24 +28,17 @@ class Portfolio extends Component {
             <li className="skillsitem">JIRA</li>
           </ul>
           <p>
-            From helping you decide what movie to watch next, finding what the
-            weather's like around the world or getting some up to date
-            information on how your favorite musician/band is doing and when
-            they'll be coming to town next, check out a select few of my latest
-            web development portfolio projects utilizing React.JS, Node.JS, JSX,
-            JavaScript, Express, PostgreSQL, jQuery, RESTful API's, HTML/CSS and
-            more.
+            From helping you decide what movie to watch next, finding what the weather's like around the world or
+            getting some up to date information on how your favorite musician/band is doing and when they'll be coming
+            to town next, check out a select few of my latest web development portfolio projects utilizing React.JS,
+            Node.JS, JSX, JavaScript, Express, PostgreSQL, jQuery, RESTful API's, HTML/CSS and more.
           </p>
         </div>
         <ul className="portfoliogroup">
           <li className="portfolioitem">
             <h5>Moviedex</h5>
             <div className="overlayContainer">
-              <a
-                href="https://moviedex-client.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="https://moviedex-client.vercel.app/" target="_blank" rel="noreferrer">
                 <img
                   id="inner"
                   src={moviedex}
@@ -98,11 +90,7 @@ class Portfolio extends Component {
           <li className="portfolioitem">
             <h5>Locksley Finance</h5>
             <div className="overlayContainer">
-              <a
-                href="https://locksley.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="https://locksley.vercel.app/" target="_blank" rel="noreferrer">
                 <img
                   id="inner"
                   src={watchlist}
@@ -138,12 +126,7 @@ class Portfolio extends Component {
                 <div className="projectlinksitem">
                   <p>
                     Demo <br />
-                    <a
-                      href="https://locksley.vercel.app/"
-                      target="_blank"
-                      title="Moviedex Demo"
-                      rel="noreferrer"
-                    >
+                    <a href="https://locksley.vercel.app/" target="_blank" title="Moviedex Demo" rel="noreferrer">
                       Locksley Finance
                     </a>
                   </p>
@@ -154,11 +137,7 @@ class Portfolio extends Component {
           <li className="portfolioitem">
             <h5>Weathertop</h5>
             <div className="overlayContainer">
-              <a
-                href="https://zacharyjameson.github.io/weathertop"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="https://zacharyjameson.github.io/weathertop" target="_blank" rel="noreferrer">
                 <img
                   src={weathertop}
                   width="200"
@@ -196,16 +175,8 @@ class Portfolio extends Component {
           <li className="portfolioitem">
             <h5>Musiciandex</h5>
             <div className="overlayContainer">
-              <a
-                href="https://zacharyjameson.github.io/musiciandex/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src={musiciandex}
-                  width="200"
-                  alt="screenshot of musiciandex homepage"
-                />
+              <a href="https://zacharyjameson.github.io/musiciandex/" target="_blank" rel="noreferrer">
+                <img src={musiciandex} width="200" alt="screenshot of musiciandex homepage" />
               </a>
 
               <div className="projectlinks">
@@ -238,11 +209,7 @@ class Portfolio extends Component {
             <h5>One Quiz to Rule Them All</h5>
             <div className="overlayContainer">
               <a href="https://zacharyjameson.github.io/quiz-app/">
-                <img
-                  src={quizapp}
-                  width="200"
-                  alt="screen shot of quiz app question"
-                />
+                <img src={quizapp} width="200" alt="screen shot of quiz app question" />
               </a>
               <div className="projectlinks">
                 <p>
@@ -273,11 +240,7 @@ class Portfolio extends Component {
           <li className="portfolioitem">
             <h5>Noteful</h5>
             <div className="overlayContainer">
-              <a
-                href="https://noteful-inky.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="https://noteful-inky.vercel.app/" target="_blank" rel="noreferrer">
                 <img src={noteful} width="200" alt="noteful demo screenshot" />
               </a>
               <div className="projectlinks">
@@ -303,12 +266,7 @@ class Portfolio extends Component {
                 </p>
                 <p>
                   Demo <br />
-                  <a
-                    href="https://noteful-inky.vercel.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                    title="Noteful Demo"
-                  >
+                  <a href="https://noteful-inky.vercel.app/" target="_blank" rel="noreferrer" title="Noteful Demo">
                     Noteful
                   </a>
                 </p>

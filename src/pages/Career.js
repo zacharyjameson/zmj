@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import inserts from "../images/audio.jpg";
-
 class Career extends Component {
   render() {
     return (

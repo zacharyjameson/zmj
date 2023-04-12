@@ -6,7 +6,7 @@ import canadabay from "../images/canadabay.jpg";
 import marketingbookpodcast from "../images/marketingbookpodcast.jpg";
 import shestartsup from "../images/shestartsup.png";
 
-class audioshire extends Component {
+class Audioshire extends Component {
   state = {};
   render() {
     return (
@@ -31,23 +31,17 @@ class audioshire extends Component {
                 <li className="skillsitem">Audio Cleaning</li>
               </ul>
               <p>
-                audioshire. was started during my college years out of a desire
-                to fund my academic career, debt free, with a passion project -
-                audio and video production. audioshire provides end to end audio
-                pre & post production services for podcasts, corporate videos,
-                broadcasts, audio focused mobile apps like walking tours and
-                meditation, and much more. Please take a look at some of the
-                projects I've worked on and the awesome clients around the world
-                that helped make that goal a success!
+                audioshire. was started during my college years out of a desire to fund my academic career, debt free,
+                with a passion project - audio and video production. audioshire provides end to end audio pre & post
+                production services for podcasts, corporate videos, broadcasts, audio focused mobile apps like walking
+                tours and meditation, and much more. Please take a look at some of the projects I've worked on and the
+                awesome clients around the world that helped make that goal a success!
               </p>
               <p>
-                These project teams are located across the world, each utilizing
-                their own project management system including Asana, JIRA,
-                Basecamp, or Notion; where I'm responsible for updating my
-                project task cards multiple times week to keep up with the
-                numerous project releases we have each and every week,
-                coordinating with internal and external marketing teams/vendors,
-                writers, engineers and more.
+                These project teams are located across the world, each utilizing their own project management system
+                including Asana, JIRA, Basecamp, or Notion; where I'm responsible for updating my project task cards
+                multiple times week to keep up with the numerous project releases we have each and every week,
+                coordinating with internal and external marketing teams/vendors, writers, engineers and more.
               </p>
             </div>
           </div>
@@ -81,20 +75,12 @@ class audioshire extends Component {
             </div>
             <div className="audioItem">
               <a href="https://www.salesartillery.com/marketing-book-podcast">
-                <img
-                  src={marketingbookpodcast}
-                  alt="Marketing Book Podcast"
-                  title="Marketing Book Podcast"
-                />
+                <img src={marketingbookpodcast} alt="Marketing Book Podcast" title="Marketing Book Podcast" />
               </a>
             </div>
             <div className="audioItem">
               <a href="https://monamiejanine.com/podcast">
-                <img
-                  src={shestartsup}
-                  alt="She Starts Up"
-                  title="She Starts Up with Janine Sickmeyer"
-                />
+                <img src={shestartsup} alt="She Starts Up" title="She Starts Up with Janine Sickmeyer" />
               </a>
             </div>
             <div className="audioItem">
@@ -113,4 +99,4 @@ class audioshire extends Component {
   }
 }
 
-export default audioshire;
+export default Audioshire;

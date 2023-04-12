@@ -27,29 +27,19 @@ function Navbar() {
       <nav className="navBar">
         <button onClick={handleToggle}>
           {navbarOpen ? (
-            <MdClose
-              style={{ color: "white", width: "40px", height: "40px" }}
-            />
+            <MdClose style={{ color: "white", width: "40px", height: "40px" }} />
           ) : (
             <FiMenu style={{ color: "white", width: "40px", height: "40px" }} />
           )}
         </button>
         <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
           <li>
-            <Link
-              to="/portfolio"
-              onClick={() => closeMenu()}
-              className="nav-link"
-            >
+            <Link to="/portfolio" onClick={() => closeMenu()} className="nav-link">
               portfolio.
             </Link>
           </li>
           <li>
-            <Link
-              to="/audioshire"
-              onClick={() => closeMenu()}
-              className="nav-link"
-            >
+            <Link to="/audioshire" onClick={() => closeMenu()} className="nav-link">
               audioshire.
             </Link>
           </li>
@@ -64,20 +54,12 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link
-              to="/interests"
-              onClick={() => closeMenu()}
-              className="nav-link"
-            >
+            <Link to="/interests" onClick={() => closeMenu()} className="nav-link">
               interests.
             </Link>
           </li>
           <li>
-            <Link
-              to="/contactme"
-              onClick={() => closeMenu()}
-              className="nav-link"
-            >
+            <Link to="/contactme" onClick={() => closeMenu()} className="nav-link">
               contact.
             </Link>
           </li>

@@ -1,28 +1,32 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Route } from "react-router-dom";
-import audioshire from "./Components/audioshire";
-import Career from "./Components/Career";
-import Contact from "./Components/ContactMe";
-import Bio from "./Components/Bio";
-import Portfolio from "./Components/Portfolio";
-import Socialsbar from "./Components/Socialsbar";
-import Navbar from "./Components/Navbar";
-import Gateway from "./Components/Gate";
-import Landing from "./Components/Landing";
+import { Route, Routes } from "react-router-dom";
+
+// Pages
+import Audioshire from "./pages/audioshire.js";
+import Career from "./pages/Career.js";
+import Contact from "./pages/ContactMe.js";
+import Bio from "./pages/Bio.js";
+import Landing from "./pages/Landing.js";
+import Portfolio from "./pages/Portfolio.js";
+
+// Componenets
+import Navbar from "./components/Navbar.js";
+import Gateway from "./components/Gate.js";
+import Socialsbar from "./components/Socialsbar.js";
 
 class App extends Component {
   renderMainRoutes() {
     return (
-      <>
-        <Route exact path="/" component={Landing} />
-        <Route path="/bio" component={Bio} />
-        <Route path="/career" component={Career} />
-        <Route path="/contactme" component={Contact} />
-        <Route path="/portfolio" component={Portfolio} />
-        <Route path="/audioshire" component={audioshire} />
-        <Route path="/interests" component={Gateway} />
-      </>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/bio" element={<Bio />} />
+        <Route path="/career" element={<Career />} />
+        <Route path="/contactme" element={<Contact />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/audioshire" element={<Audioshire />} />
+        <Route path="/interests" element={<Gateway />} />
+      </Routes>
     );
   }
 
