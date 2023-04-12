@@ -6,10 +6,10 @@ import Career from "./pages/Career";
 import Contact from "./pages/ContactMe";
 import Bio from "./pages/Bio";
 import Portfolio from "./pages/Portfolio";
-import Socialsbar from "./components/Socialsbar";
 import Navbar from "./components/Navbar";
 import Gateway from "./components/Gate";
 import Landing from "./pages/Landing";
+import Socialsbar from "./components/Socialsbar";
 
 class App extends Component {
   renderMainRoutes() {
