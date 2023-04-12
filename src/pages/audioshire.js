@@ -6,7 +6,7 @@ import canadabay from "../images/canadabay.jpg";
 import marketingbookpodcast from "../images/marketingbookpodcast.jpg";
 import shestartsup from "../images/shestartsup.png";
 
-class audioshire extends Component {
+class Audioshire extends Component {
   state = {};
   render() {
     return (
@@ -99,4 +99,4 @@ class audioshire extends Component {
   }
 }
 
-export default audioshire;
+export default Audioshire;
