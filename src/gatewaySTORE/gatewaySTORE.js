@@ -1,79 +1,79 @@
-import books from "../images/books.jpg";
-import bakerbeach from "../images/bakerbeach.jpg";
-import burrito from "../images/burrito.jpg";
-import sushi from "../images/sushi.jpg";
-import berm from "../images/berm.jpg";
-import cassette from "../images/cassette.jpg";
-import coit from "../images/coit.jpg";
-import countryfarm from "../images/countryfarm.jpg";
-import dtsanjose from "../images/dtsanjose.jpg";
-import mistyhands from "../images/mistyhands.jpg";
-import mixboard from "../images/mixboard.jpg";
-import scream from "../images/scream.jpg";
-import xbox from "../images/xbox.jpg";
-import guitar from "../images/guitar.jpg";
-import piano from "../images/piano.jpg";
+// import books from "../images/books.jpg";
+// import bakerbeach from "../images/bakerbeach.jpg";
+// import burrito from "../images/burrito.jpg";
+// import sushi from "../images/sushi.jpg";
+// import berm from "../images/berm.jpg";
+// import cassette from "../images/cassette.jpg";
+// import coit from "../images/coit.jpg";
+// import countryfarm from "../images/countryfarm.jpg";
+// import dtsanjose from "../images/dtsanjose.jpg";
+// import mistyhands from "../images/mistyhands.jpg";
+// import mixboard from "../images/mixboard.jpg";
+// import scream from "../images/scream.jpg";
+// import xbox from "../images/xbox.jpg";
+// import guitar from "../images/guitar.jpg";
+// import piano from "../images/piano.jpg";
 
 const store = {
   pictures: [
     {
-      picture: burrito,
+      picture: "../images/burrito.jpg",
       id: "yum",
     },
     {
-      picture: berm,
+      picture: "../images/berm.jpg",
       id: "big berm",
     },
     {
-      picture: guitar,
+      picture: "../images/guitar.jpg",
       id: "guitar",
     },
     {
-      picture: dtsanjose,
+      picture: "..images/dtsanjose.jpg",
       hello: "yes hello",
     },
     {
-      picture: mixboard,
+      picture: "../images/mixboard.jpg",
       id: "music",
     },
     {
-      picture: countryfarm,
+      picture: "../images/countryfarm.jpg",
       id: "yeehaw",
     },
     {
-      picture: sushi,
+      picture: "../images/sushi.jpg",
       id: "tilted",
     },
     {
-      picture: coit,
+      picture: "../images/coit.jpg",
       id: "this is nice",
     },
     {
-      picture: mistyhands,
+      picture: "../images/mistyhands.jpg",
       id: "ooo it's looking good",
     },
     {
-      picture: xbox,
+      picture: "../images/xbox.jpg",
       id: "xbox",
     },
     {
-      picture: cassette,
+      picture: "../images/cassette.jpg",
       id: "scritch scratch",
     },
     {
-      picture: books,
+      picture: "../images/books.jpg",
       id: "yum",
     },
     {
-      picture: scream,
+      picture: "../images/scream.jpg",
       id: "ah!",
     },
     {
-      picture: piano,
+      picture: "../images/piano.jpg",
       id: "piano",
     },
     {
-      picture: bakerbeach,
+      picture: "../images/bakerbeach.jpg",
       id: "baker",
     },
   ],

@@ -11,7 +11,7 @@ class Gateway extends Component {
           {tiles.map((pic, index) => {
             return (
               <div className="gateitem" key={index}>
-                <Tilt tiltReverse={true} scale={.99}>
+                <Tilt tiltReverse={true} scale={0.99}>
                   <div>
                     <img className="cover" src={pic.picture} alt="" />
                   </div>
